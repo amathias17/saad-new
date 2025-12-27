@@ -258,6 +258,20 @@
         "mobile",
         "layout"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "feature",
+      "title": "Added Hero Mobile Navigation",
+      "description": "Implemented a mobile nav toggle in DentistHero with dropdown links and CTA inside the menu.",
+      "files_modified": [
+        "src/components/DentistHero.astro"
+      ],
+      "beads_issue": "saad-new-6oj",
+      "tags": [
+        "navbar",
+        "mobile"
+      ]
     }
   ]
 }

@@ -21,6 +21,21 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#team">Our Team</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a class="mobile-cta" href="#contact">Book Appointment</a>
+      </div>
+
       <button class="cta-button">Book Appointment</button>
     </div>
   </nav>
@@ -178,6 +193,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
 
   .logo {
@@ -238,6 +254,98 @@
 
   .nav-links a:hover::after {
     width: 100%;
+  }
+
+  .nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(168, 197, 181, 0.2);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .nav-toggle span {
+    width: 20px;
+    height: 2px;
+    background: var(--sage-dark);
+    border-radius: 999px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar.nav-open .nav-toggle span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar.nav-open .nav-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.nav-open .nav-toggle span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    left: 1.5rem;
+    background: rgba(250, 249, 246, 0.98);
+    border: 1px solid rgba(168, 197, 181, 0.2);
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: 0 20px 40px rgba(42, 95, 79, 0.12);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar.nav-open .mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .mobile-nav a {
+    color: var(--text-primary);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.6rem 0.75rem;
+    border-radius: 12px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .mobile-nav a:hover {
+    background: rgba(168, 197, 181, 0.2);
+    color: var(--sage-dark);
+  }
+
+  .mobile-nav .mobile-cta {
+    margin-top: 0.25rem;
+    text-align: center;
+    background: var(--sage-dark);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 10px 24px rgba(42, 95, 79, 0.2);
+  }
+
+  .mobile-nav .mobile-cta:hover {
+    background: var(--deep-green);
+    color: white;
   }
 
   .cta-button {
@@ -628,6 +736,14 @@
     .nav-links {
       display: none;
     }
+
+    .cta-button {
+      display: none;
+    }
+
+    .nav-toggle {
+      display: flex;
+    }
   }
 
   @media (max-width: 768px) {
@@ -686,3 +802,23 @@
     }
   }
 </style>
+
+<script>
+  const navbar = document.querySelector('.navbar');
+  const toggle = navbar?.querySelector('.nav-toggle');
+  const mobileNav = navbar?.querySelector('.mobile-nav');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = navbar?.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    mobileNav?.setAttribute('aria-hidden', String(!isOpen));
+  });
+
+  mobileNav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navbar?.classList.remove('nav-open');
+      toggle?.setAttribute('aria-expanded', 'false');
+      mobileNav?.setAttribute('aria-hidden', 'true');
+    });
+  });
+</script>
