@@ -302,6 +302,21 @@
         "mobile",
         "layout"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Reduce Services Headline Size on Mobile",
+      "description": "Decreased mobile Services section headline size to prevent truncation.",
+      "files_modified": [
+        "src/components/Services.astro"
+      ],
+      "beads_issue": "saad-new-coh",
+      "tags": [
+        "services",
+        "typography",
+        "mobile"
+      ]
     }
   ]
 }
