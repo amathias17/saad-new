@@ -243,6 +243,21 @@
         "services",
         "contrast"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Fix Mobile Navbar CTA Wrap",
+      "description": "Reduced CTA button sizing and forced no-wrap on mobile to prevent line breaks.",
+      "files_modified": [
+        "src/components/DentistHero.astro"
+      ],
+      "beads_issue": "saad-new-e2r",
+      "tags": [
+        "navbar",
+        "mobile",
+        "layout"
+      ]
     }
   ]
 }
