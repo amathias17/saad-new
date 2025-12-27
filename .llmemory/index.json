@@ -317,6 +317,20 @@
         "typography",
         "mobile"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "SectionHeader Mobile Typography",
+      "description": "Added a mobile breakpoint in SectionHeader to reduce heading size on small screens.",
+      "files_modified": [
+        "src/components/SectionHeader.astro"
+      ],
+      "beads_issue": "saad-new-coh",
+      "tags": [
+        "typography",
+        "mobile"
+      ]
     }
   ]
 }

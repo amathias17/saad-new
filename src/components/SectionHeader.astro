@@ -56,6 +56,17 @@ const { badge, description } = Astro.props;
     margin: 0 auto;
   }
 
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    .section-description {
+      font-size: 1.05rem;
+    }
+  }
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
