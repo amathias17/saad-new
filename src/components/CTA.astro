@@ -1,0 +1,550 @@
+---
+// CTA (Call-to-Action) Section Component
+---
+
+<section class="cta">
+  <div class="cta-container">
+    <div class="cta-content">
+      <div class="cta-badge">
+        <span class="badge-dot"></span>
+        Limited Availability
+      </div>
+      <h2 class="cta-title">
+        Ready for a Healthier,<br/>
+        <span class="gradient-text">Brighter Smile?</span>
+      </h2>
+      <p class="cta-description">
+        Join thousands of happy patients who've transformed their dental health with us.
+        Book your appointment today and experience the difference compassionate,
+        expert care can make.
+      </p>
+
+      <div class="cta-actions">
+        <button class="primary-cta">
+          <span>Schedule Your Appointment</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="secondary-cta">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M2 5L2 3C2 2.44772 2.44772 2 3 2L17 2C17.5523 2 18 2.44772 18 3V5M2 5L2 17C2 17.5523 2.44772 18 3 18H17C17.5523 18 18 17.5523 18 17V5M2 5H18M13 9V14M7 9V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>Call Us: (555) 123-4567</span>
+        </button>
+      </div>
+
+      <div class="cta-benefits">
+        <div class="benefit">
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>New Patient Special</span>
+        </div>
+        <div class="benefit">
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Same-Day Appointments</span>
+        </div>
+        <div class="benefit">
+          <svg class="benefit-icon" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Flexible Payment Plans</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-visual">
+      <div class="visual-card card-primary">
+        <div class="card-header">
+          <div class="appointment-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="12" width="32" height="28" rx="4" stroke="currentColor" stroke-width="3"/>
+              <path d="M8 20H40" stroke="currentColor" stroke-width="3"/>
+              <path d="M16 8V16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M32 8V16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="16" cy="28" r="2" fill="currentColor"/>
+              <circle cx="24" cy="28" r="2" fill="currentColor"/>
+              <circle cx="32" cy="28" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Next Available</div>
+            <div class="card-subtitle">Today at 2:30 PM</div>
+          </div>
+        </div>
+        <div class="availability-list">
+          <div class="time-slot available">
+            <span class="time">9:00 AM</span>
+            <span class="status">Available</span>
+          </div>
+          <div class="time-slot available">
+            <span class="time">2:30 PM</span>
+            <span class="status">Available</span>
+          </div>
+          <div class="time-slot">
+            <span class="time">4:00 PM</span>
+            <span class="status">Booked</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="visual-card card-secondary">
+        <div class="promo-badge">New Patient Offer</div>
+        <div class="promo-content">
+          <div class="promo-discount">$99</div>
+          <div class="promo-details">
+            <div class="promo-title">Complete Exam Package</div>
+            <div class="promo-items">Exam • X-Rays • Cleaning</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Elements -->
+  <div class="cta-blob blob-1"></div>
+  <div class="cta-blob blob-2"></div>
+  <div class="decorative-dots dots-1"></div>
+  <div class="decorative-dots dots-2"></div>
+</section>
+
+<style>
+  .cta {
+    padding: 8rem 2rem;
+    background: linear-gradient(135deg, var(--sage-dark) 0%, var(--deep-green) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .blob-1 {
+    width: 600px;
+    height: 600px;
+    background: var(--terracotta);
+    top: -200px;
+    right: -100px;
+  }
+
+  .blob-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--sage);
+    bottom: -150px;
+    left: -100px;
+  }
+
+  .decorative-dots {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+    background-size: 20px 20px;
+    pointer-events: none;
+  }
+
+  .dots-1 {
+    top: 10%;
+    left: 5%;
+    transform: rotate(15deg);
+  }
+
+  .dots-2 {
+    bottom: 15%;
+    right: 8%;
+    transform: rotate(-15deg);
+  }
+
+  .cta-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-content {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+  }
+
+  .badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--terracotta);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.2);
+    }
+  }
+
+  .cta-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    color: white;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--terracotta) 0%, var(--amber) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .cta-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 3rem;
+    max-width: 540px;
+  }
+
+  .cta-actions {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .primary-cta {
+    background: white;
+    color: var(--sage-dark);
+    border: none;
+    padding: 1.25rem 2.5rem;
+    border-radius: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .primary-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .primary-cta svg {
+    transition: transform 0.3s ease;
+  }
+
+  .primary-cta:hover svg {
+    transform: translateX(4px);
+  }
+
+  .secondary-cta {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 1.25rem 2.5rem;
+    border-radius: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+
+  .secondary-cta:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+  }
+
+  .cta-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .benefit {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .benefit-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--terracotta);
+  }
+
+  .cta-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fadeIn 1s ease-out 0.3s both;
+  }
+
+  .visual-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-primary {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .card-secondary {
+    margin-left: 3rem;
+    animation: float 5s ease-in-out infinite 1s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(168, 197, 181, 0.2);
+  }
+
+  .appointment-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--sage-dark);
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+  }
+
+  .card-subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    color: var(--sage-dark);
+    font-weight: 600;
+  }
+
+  .availability-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .time-slot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--warm-gray);
+    border-radius: 12px;
+    opacity: 0.5;
+  }
+
+  .time-slot.available {
+    background: rgba(168, 197, 181, 0.15);
+    border: 1px solid rgba(168, 197, 181, 0.3);
+    opacity: 1;
+  }
+
+  .time {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .status {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .time-slot.available .status {
+    color: var(--sage-dark);
+    font-weight: 600;
+  }
+
+  .promo-badge {
+    background: var(--terracotta);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+
+  .promo-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .promo-discount {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--sage-dark) 0%, var(--terracotta) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+  }
+
+  .promo-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .promo-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+  }
+
+  .promo-items {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .cta-container {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    .cta-visual {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cta {
+      padding: 5rem 1.5rem;
+    }
+
+    .cta-title {
+      font-size: 2.75rem;
+    }
+
+    .cta-description {
+      font-size: 1.1rem;
+    }
+
+    .cta-actions {
+      flex-direction: column;
+    }
+
+    .primary-cta,
+    .secondary-cta {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .card-secondary {
+      margin-left: 0;
+    }
+
+    .promo-content {
+      gap: 1.5rem;
+    }
+
+    .promo-discount {
+      font-size: 3rem;
+    }
+  }
+</style>

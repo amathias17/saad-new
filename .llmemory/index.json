@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "date": "2025-12-27",
+      "type": "project-update",
+      "title": "Complete Dentist Website Implementation",
+      "description": "Created full production-ready dentist website with Navbar, Hero, Services, About, Testimonials, CTA, and Footer using 'Soft Modern Wellness' design aesthetic",
+      "files_modified": [
+        "src/pages/index.astro",
+        "src/components/DentistHero.astro",
+        "src/components/Services.astro",
+        "src/components/About.astro",
+        "src/components/Testimonials.astro",
+        "src/components/CTA.astro",
+        "src/components/Footer.astro"
+      ],
+      "tags": [
+        "frontend",
+        "design",
+        "components",
+        "astro"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Typography Consistency Fix",
+      "description": "Ensured consistent typography across all components. Added Google Fonts @import to all 6 components and applied Manrope to body text, Plus Jakarta Sans to headings",
+      "files_modified": [
+        "src/components/Services.astro",
+        "src/components/About.astro",
+        "src/components/Testimonials.astro",
+        "src/components/CTA.astro",
+        "src/components/Footer.astro"
+      ],
+      "beads_issue": "saad-new-kjj",
+      "tags": [
+        "typography",
+        "design-system",
+        "consistency"
+      ]
+    },
+    {
+      "date": "2025-02-06",
+      "type": "performance",
+      "title": "Consolidated Font Imports",
+      "description": "Moved Google Fonts @import statements into BaseLayout and removed component-level imports to reduce duplicate font requests.",
+      "files_modified": [
+        "src/layouts/BaseLayout.astro",
+        "src/components/About.astro",
+        "src/components/CTA.astro",
+        "src/components/DentistHero.astro",
+        "src/components/Footer.astro",
+        "src/components/Navbar.astro",
+        "src/components/Services.astro",
+        "src/components/Testimonials.astro"
+      ],
+      "beads_issue": "saad-new-by8",
+      "tags": [
+        "fonts",
+        "performance",
+        "astro"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "docs",
+      "title": "Documented MCP Usage",
+      "description": "Added MCP server usage guidelines to AGENTS.md for proper tool selection and scope.",
+      "files_modified": [
+        "AGENTS.md"
+      ],
+      "tags": [
+        "docs",
+        "mcp",
+        "agent-instructions"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "docs",
+      "title": "Expanded MCP Instructions",
+      "description": "Listed available MCP servers and usage steps in AGENTS.md.",
+      "files_modified": [
+        "AGENTS.md"
+      ],
+      "tags": [
+        "docs",
+        "mcp",
+        "agent-instructions"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "docs",
+      "title": "MCP List Fixup",
+      "description": "Added sequential-thinking and playwright to MCP list in AGENTS.md.",
+      "files_modified": [
+        "AGENTS.md"
+      ],
+      "tags": [
+        "docs",
+        "mcp",
+        "agent-instructions"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "docs",
+      "title": "Added MCP Examples",
+      "description": "Added quick ?when to use? examples for each MCP in AGENTS.md.",
+      "files_modified": [
+        "AGENTS.md"
+      ],
+      "tags": [
+        "docs",
+        "mcp",
+        "agent-instructions"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "docs",
+      "title": "Created Design Guide",
+      "description": "Documented the current visual system, tokens, and component patterns in docs/design-guide.md.",
+      "files_modified": [
+        "docs/design-guide.md"
+      ],
+      "beads_issue": "saad-new-aib",
+      "tags": [
+        "docs",
+        "design-guide",
+        "design-system"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "refactor",
+      "title": "Use BaseLayout on Index",
+      "description": "Switched index.astro to BaseLayout and added layout props to control navbar and main padding.",
+      "files_modified": [
+        "src/layouts/BaseLayout.astro",
+        "src/pages/index.astro",
+        "src/styles/global.css"
+      ],
+      "beads_issue": "saad-new-aac",
+      "tags": [
+        "layout",
+        "astro"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "design-system",
+      "title": "Centralized Color Tokens",
+      "description": "Aligned global.css tokens with the design guide and replaced hardcoded palette values in components.",
+      "files_modified": [
+        "src/styles/global.css",
+        "src/components/DentistHero.astro",
+        "src/components/About.astro",
+        "src/components/Services.astro",
+        "src/components/CTA.astro",
+        "src/components/Testimonials.astro",
+        "src/components/Navbar.astro"
+      ],
+      "beads_issue": "saad-new-dyu",
+      "tags": [
+        "design-system",
+        "tokens"
+      ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Fix Global Color Tokens",
+      "description": "Restored design guide palette and nav tokens in global.css; removed nav-only root shadow overrides.",
+      "files_modified": [
+        "src/styles/global.css",
+        "src/components/Navbar.astro"
+      ],
+      "beads_issue": "saad-new-wz0",
+      "tags": [
+        "colors",
+        "design-system"
+      ]
+    }
+  ]
+}

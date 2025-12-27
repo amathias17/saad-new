@@ -1,0 +1,1009 @@
+---
+interface Props {
+  phone?: string;
+  hours?: string;
+  ctaText?: string;
+}
+
+const {
+  phone = "(814) 201-2102",
+  hours = "Mon - Thu: 8:30am to 5:30pm",
+  ctaText = "Schedule Consultation",
+} = Astro.props;
+---
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+<header id="am-navigation">
+  <div class="am-top-bar">
+    <div class="am-gradient-bg"></div>
+    <div class="am-top-container">
+      <div class="am-top-contact">
+        <a href={`tel:${phone.replace(/[^0-9+]/g, "")}`} class="am-top-link">
+          <svg class="am-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          {phone}
+        </a>
+        <span class="am-top-link am-hours">
+          <svg class="am-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          {hours}
+        </span>
+      </div>
+      <div class="am-top-social">
+        <a href="#" class="am-social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="am-social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" class="am-social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="am-container">
+    <a href="/" class="am-logo" aria-label="back to home">
+      <div class="am-mark">
+        <span class="am-mark-text">SE</span>
+        <div class="am-mark-glow"></div>
+      </div>
+      <span class="am-wordmark">Saad Endodontics</span>
+    </a>
+    <nav class="am-nav" role="navigation">
+      <button class="am-toggle" aria-label="mobile menu toggle">
+        <div class="am-box" aria-hidden="true">
+          <span class="am-line am-line1" aria-hidden="true"></span>
+          <span class="am-line am-line2" aria-hidden="true"></span>
+          <span class="am-line am-line3" aria-hidden="true"></span>
+        </div>
+      </button>
+      <div class="am-ul-wrapper">
+        <ul id="am-expanded" class="am-ul" aria-expanded="false">
+          <li class="am-li">
+            <a href="/" class="am-li-link am-active">
+              <span>Home</span>
+              <div class="am-link-line"></div>
+            </a>
+          </li>
+          <li class="am-li">
+            <a href="/about" class="am-li-link">
+              <span>About</span>
+              <div class="am-link-line"></div>
+            </a>
+          </li>
+          <li class="am-li am-dropdown" tabindex="0">
+            <span class="am-li-link">
+              <span>Services</span>
+              <svg class="am-drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <div class="am-link-line"></div>
+            </span>
+            <ul class="am-drop-ul">
+              <li class="am-drop-li">
+                <a href="/services/root-canal" class="am-li-link am-drop-link">
+                  <svg class="am-service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20"></path>
+                  </svg>
+                  Root Canal Treatment
+                </a>
+              </li>
+              <li class="am-drop-li">
+                <a href="/services/retreatment" class="am-li-link am-drop-link">
+                  <svg class="am-service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"></path>
+                  </svg>
+                  Root Canal Retreatment
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="am-li">
+            <a href="/referrals" class="am-li-link">
+              <span>Referrals</span>
+              <div class="am-link-line"></div>
+            </a>
+          </li>
+          <li class="am-li">
+            <a href="/contact" class="am-li-link">
+              <span>Contact</span>
+              <div class="am-link-line"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a href="/contact" class="am-button-solid am-nav-button">
+      <span>{ctaText}</span>
+      <svg class="am-button-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </div>
+</header>
+<style>
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    body.am-open {
+      overflow: hidden;
+    }
+    body.scroll #am-navigation {
+      transform: translateY(-3.1875rem);
+    }
+    #am-navigation {
+      width: 100%;
+      box-sizing: border-box;
+      background-color: var(--nav-white);
+      box-shadow: 0 4px 24px var(--nav-shadow-lg);
+      position: fixed;
+      z-index: 10000;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+    }
+    #am-navigation:before {
+      content: "";
+      width: 100%;
+      height: 0vh;
+      background: linear-gradient(135deg, rgba(2, 184, 191, 0.18), rgba(64, 192, 242, 0.12));
+      backdrop-filter: blur(20px);
+      position: absolute;
+      display: block;
+      top: 100%;
+      right: 0;
+      z-index: -1100;
+      opacity: 0;
+      transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    }
+    #am-navigation.am-active:before {
+      height: 150vh;
+      opacity: 1;
+    }
+    #am-navigation.am-active .am-ul-wrapper {
+      opacity: 1;
+      transform: scaleY(1);
+      transition-delay: 0.15s;
+    }
+    #am-navigation.am-active .am-li {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    #am-navigation .am-top-bar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #am-navigation .am-gradient-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg,
+        var(--nav-cream) 0%,
+        rgba(189, 233, 251, 0.7) 50%,
+        var(--nav-cream) 100%);
+      animation: gradientShift 15s ease infinite;
+      opacity: 0.8;
+    }
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    #am-navigation .am-top-container {
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    #am-navigation .am-top-contact {
+      width: auto;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(0.75rem, 2vw, 1.5rem);
+      font-family: 'Manrope', sans-serif;
+    }
+    #am-navigation .am-top-link {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      line-height: 1.5em;
+      text-decoration: none;
+      margin: 0;
+      color: var(--nav-text);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    #am-navigation .am-top-link:hover {
+      color: var(--nav-primary);
+      transform: translateX(2px);
+    }
+    #am-navigation .am-top-link.am-hours {
+      display: none;
+    }
+    #am-navigation .am-link-icon {
+      width: 1.125rem;
+      height: 1.125rem;
+      display: block;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    #am-navigation .am-top-link:hover .am-link-icon {
+      transform: scale(1.1);
+    }
+    #am-navigation .am-top-social {
+      visibility: visible;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+    #am-navigation .am-social-link {
+      width: 2rem;
+      height: 2rem;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--nav-text-light);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-social-link:hover {
+      color: var(--nav-white);
+      background: var(--nav-primary);
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 4px 12px var(--nav-shadow-md);
+    }
+    #am-navigation .am-social-link svg {
+      width: 1rem;
+      height: 1rem;
+      display: block;
+    }
+    #am-navigation .am-container {
+      width: 100%;
+      padding: 1.125rem 1rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      background: var(--nav-white);
+    }
+    #am-navigation .am-logo {
+      width: auto;
+      height: 2.75rem;
+      margin: 0 auto 0 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.875rem;
+      text-decoration: none;
+      order: 1;
+      z-index: 10;
+      transition: transform 0.3s ease;
+    }
+    #am-navigation .am-logo:hover {
+      transform: translateY(-1px);
+    }
+    #am-navigation .am-logo:hover .am-mark-glow {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    #am-navigation .am-mark {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 1rem;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--nav-primary) 0%, var(--nav-primary-light) 100%);
+      color: var(--nav-white);
+      font-size: 0.9375rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      position: relative;
+      box-shadow: 0 4px 16px var(--nav-shadow-md);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: logoPulse 3s ease infinite;
+    }
+    @keyframes logoPulse {
+      0%, 100% { box-shadow: 0 4px 16px var(--nav-shadow-md); }
+      50% { box-shadow: 0 6px 24px var(--nav-shadow-lg); }
+    }
+    #am-navigation .am-mark-text {
+      position: relative;
+      z-index: 2;
+    }
+    #am-navigation .am-mark-glow {
+      position: absolute;
+      inset: -4px;
+      background: radial-gradient(circle, var(--nav-primary-light) 0%, transparent 70%);
+      border-radius: 1.25rem;
+      opacity: 0;
+      filter: blur(12px);
+      transition: all 0.4s ease;
+      z-index: 0;
+    }
+    #am-navigation .am-wordmark {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--nav-text);
+      letter-spacing: 0.02em;
+    }
+    #am-navigation .am-nav {
+      order: 2;
+    }
+    #am-navigation .am-toggle {
+      width: 3rem;
+      height: 3rem;
+      margin: 0 0 0 auto;
+      background: linear-gradient(135deg, var(--nav-primary) 0%, var(--nav-primary-light) 100%);
+      border: none;
+      border-radius: 0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 12px var(--nav-shadow-md);
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-toggle:hover {
+      box-shadow: 0 6px 20px var(--nav-shadow-lg);
+      transform: translateY(-2px);
+    }
+    #am-navigation .am-toggle.am-active {
+      transform: rotate(90deg);
+      background: linear-gradient(135deg, var(--nav-primary-dark) 0%, var(--nav-accent) 100%);
+    }
+    #am-navigation .am-active .am-line1 {
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    #am-navigation .am-active .am-line2 {
+      top: 50%;
+      transform-origin: center;
+      transform: translate(-50%, -50%) translateY(0) rotate(-45deg);
+    }
+    #am-navigation .am-active .am-line3 {
+      bottom: 100%;
+      opacity: 0;
+    }
+    #am-navigation .am-box {
+      width: 1.5rem;
+      height: 0.875rem;
+      position: relative;
+    }
+    #am-navigation .am-line {
+      width: 100%;
+      height: 2.5px;
+      border-radius: 2px;
+      background-color: var(--nav-white);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #am-navigation .am-line1 {
+      top: 0;
+      transform-origin: center;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), top 0.3s ease;
+    }
+    #am-navigation .am-line2 {
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), top 0.3s ease;
+    }
+    #am-navigation .am-line3 {
+      bottom: 0;
+      transition: bottom 0.3s ease, opacity 0.3s ease;
+    }
+    #am-navigation .am-ul-wrapper {
+      width: 100%;
+      height: auto;
+      padding-bottom: 3rem;
+      opacity: 0;
+      background: linear-gradient(to bottom, var(--nav-white) 0%, var(--nav-cream) 100%);
+      box-shadow: inset 0 8px 24px rgba(2, 184, 191, 0.06);
+      overflow: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: -1;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    }
+    #am-navigation .am-ul {
+      margin: 0;
+      padding: 2.5rem 0 0 0;
+      width: 100%;
+      height: auto;
+      max-height: 65vh;
+      overflow-y: auto;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    #am-navigation .am-li {
+      width: 90%;
+      text-align: center;
+      list-style: none;
+      margin-right: 0;
+      transform: translateY(-4rem);
+      opacity: 0;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+    }
+    #am-navigation .am-li:nth-of-type(1) {
+      transition-delay: 0.05s;
+    }
+    #am-navigation .am-li:nth-of-type(2) {
+      transition-delay: 0.1s;
+    }
+    #am-navigation .am-li:nth-of-type(3) {
+      transition-delay: 0.15s;
+    }
+    #am-navigation .am-li:nth-of-type(4) {
+      transition-delay: 0.2s;
+    }
+    #am-navigation .am-li:nth-of-type(5) {
+      transition-delay: 0.25s;
+    }
+    #am-navigation .am-li:nth-of-type(6) {
+      transition-delay: 0.3s;
+    }
+    #am-navigation .am-li-link {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+      font-weight: 500;
+      line-height: 1.2em;
+      text-decoration: none;
+      margin: 0;
+      padding: 1rem 1.5rem;
+      color: var(--nav-text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      border-radius: 0.75rem;
+      transition: all 0.3s ease;
+    }
+    #am-navigation .am-li-link:hover {
+      background: rgba(2, 184, 191, 0.08);
+      color: var(--nav-primary);
+    }
+    #am-navigation .am-li-link.am-active {
+      color: var(--nav-primary);
+      background: rgba(2, 184, 191, 0.1);
+      font-weight: 600;
+    }
+    #am-navigation .am-link-line {
+      display: none;
+    }
+    #am-navigation .am-button-solid {
+      display: none;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #am-navigation .am-top-link.am-hours {
+      display: flex;
+    }
+  }
+
+  /* Navigation Dropdown - Mobile */
+  @media only screen and (max-width: 63.9375rem) {
+    #am-navigation .am-li {
+      text-align: center;
+      width: 90%;
+      display: block;
+    }
+    #am-navigation .am-dropdown {
+      position: relative;
+    }
+    #am-navigation .am-dropdown.am-active .am-drop-ul {
+      height: auto;
+      max-height: 20rem;
+      opacity: 1;
+      visibility: visible;
+      margin: 0.5rem 0 0 0;
+      padding: 0.5rem;
+    }
+    #am-navigation .am-dropdown.am-active .am-drop-link {
+      opacity: 1;
+    }
+    #am-navigation .am-dropdown.am-active .am-drop-icon {
+      transform: rotate(180deg);
+    }
+    #am-navigation .am-dropdown .am-li-link {
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    #am-navigation .am-drop-icon {
+      width: 1.125rem;
+      height: 1.125rem;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-drop-ul {
+      width: 100%;
+      height: 0;
+      max-height: 0;
+      margin: 0;
+      padding: 0;
+      background: rgba(2, 184, 191, 0.05);
+      border-radius: 0.75rem;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.25rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-drop-li {
+      list-style: none;
+    }
+    #am-navigation .am-li-link.am-drop-link {
+      font-size: clamp(0.9375rem, 2vw, 1.125rem);
+      font-weight: 400;
+      color: var(--nav-text);
+      padding: 0.875rem 1rem;
+      gap: 0.75rem;
+      justify-content: flex-start;
+    }
+    #am-navigation .am-li-link.am-drop-link:hover {
+      background: rgba(2, 184, 191, 0.12);
+    }
+    #am-navigation .am-service-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      color: var(--nav-primary);
+      flex-shrink: 0;
+    }
+  }
+  @media only screen and (min-width: 64rem) {
+    body.scroll #am-navigation {
+      transform: translateY(-3.1875rem);
+      box-shadow: 0 8px 32px var(--nav-shadow-lg);
+    }
+    #am-navigation {
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: var(--nav-white);
+      box-shadow: 0 4px 24px var(--nav-shadow-lg);
+      position: fixed;
+      z-index: 10000;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-top-bar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #am-navigation .am-gradient-bg {
+      background: linear-gradient(135deg,
+        var(--nav-cream) 0%,
+        rgba(189, 233, 251, 0.7) 40%,
+        rgba(64, 192, 242, 0.15) 70%,
+        var(--nav-cream) 100%);
+      background-size: 200% 200%;
+      animation: gradientShift 20s ease infinite;
+    }
+    #am-navigation .am-top-container {
+      width: 100%;
+      max-width: 80rem;
+      padding: 0.875rem 2rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+    #am-navigation .am-top-contact {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+    }
+    #am-navigation .am-top-link {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5em;
+      text-decoration: none;
+      margin: 0;
+      color: var(--nav-text);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.625rem;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    #am-navigation .am-top-link:hover {
+      color: var(--nav-primary);
+      transform: translateX(3px);
+    }
+    #am-navigation .am-link-icon {
+      width: 1.125rem;
+      height: 1.125rem;
+      display: block;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    #am-navigation .am-top-link:hover .am-link-icon {
+      transform: scale(1.1) rotate(5deg);
+    }
+    #am-navigation .am-top-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    #am-navigation .am-social-link {
+      width: 2.25rem;
+      height: 2.25rem;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--nav-text-light);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-social-link:hover {
+      color: var(--nav-white);
+      background: var(--nav-primary);
+      transform: translateY(-3px) scale(1.08);
+      box-shadow: 0 6px 16px var(--nav-shadow-md);
+    }
+    #am-navigation .am-social-link svg {
+      width: 1.125rem;
+      height: 1.125rem;
+      display: block;
+    }
+    #am-navigation .am-container {
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      padding: 0 2rem;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2rem;
+      position: relative;
+      background: var(--nav-white);
+    }
+    #am-navigation .am-toggle {
+      display: none;
+    }
+    #am-navigation .am-logo {
+      height: clamp(2.75rem, 4vw, 3rem);
+      margin: 0 auto 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    #am-navigation .am-mark {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 1.125rem;
+    }
+    #am-navigation .am-wordmark {
+      font-size: 1.25rem;
+    }
+    #am-navigation .am-ul-wrapper {
+      opacity: 1;
+      transform: none;
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      overflow: visible;
+    }
+    #am-navigation .am-ul {
+      width: auto;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0.5rem;
+      max-height: none;
+      overflow: visible;
+    }
+    #am-navigation .am-li {
+      list-style: none;
+      padding: 1.75rem 0;
+      flex: none;
+      width: auto;
+      transform: none;
+      opacity: 1;
+    }
+    #am-navigation .am-li-link {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      line-height: 1.5em;
+      text-decoration: none;
+      margin: 0;
+      padding: 0.625rem 1.125rem;
+      color: var(--nav-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.375rem;
+      position: relative;
+      border-radius: 0.625rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-li-link:hover {
+      color: var(--nav-primary);
+      background: rgba(2, 184, 191, 0.06);
+    }
+    #am-navigation .am-li-link.am-active {
+      font-weight: 600;
+      color: var(--nav-primary);
+      background: rgba(2, 184, 191, 0.1);
+    }
+    #am-navigation .am-link-line {
+      display: none;
+    }
+    #am-navigation .am-button-solid {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      margin: 0;
+      padding: 0.875rem 1.75rem;
+      color: var(--nav-white);
+      background: linear-gradient(135deg, var(--nav-primary) 0%, var(--nav-primary-light) 100%);
+      border-radius: 0.875rem;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      position: relative;
+      z-index: 1;
+      box-sizing: border-box;
+      box-shadow: 0 4px 12px var(--nav-shadow-md);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-button-solid:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--nav-primary-dark) 0%, var(--nav-secondary) 100%);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.4s ease;
+    }
+    #am-navigation .am-button-solid:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--nav-shadow-lg);
+    }
+    #am-navigation .am-button-solid:hover:before {
+      opacity: 1;
+    }
+    #am-navigation .am-button-arrow {
+      width: 1.125rem;
+      height: 1.125rem;
+      transition: transform 0.3s ease;
+    }
+    #am-navigation .am-button-solid:hover .am-button-arrow {
+      transform: translateX(3px);
+    }
+    #am-navigation .am-nav-button {
+      margin-left: 0.5rem;
+    }
+  }
+  @media only screen and (min-width: 64rem) {
+    #am-navigation .am-dropdown {
+      position: relative;
+    }
+    #am-navigation .am-dropdown:hover {
+      cursor: pointer;
+    }
+    #am-navigation .am-dropdown:hover .am-drop-ul {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    #am-navigation .am-dropdown:hover .am-drop-li {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #am-navigation .am-dropdown:hover .am-drop-icon {
+      transform: rotate(180deg);
+    }
+    #am-navigation .am-dropdown .am-li-link {
+      cursor: pointer;
+    }
+    #am-navigation .am-drop-icon {
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-drop-ul {
+      min-width: 15rem;
+      margin: 0;
+      padding: 0.625rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 1rem;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: 0 12px 40px rgba(2, 184, 191, 0.15), 0 0 0 1px rgba(2, 184, 191, 0.1);
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px);
+      z-index: 1000;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-drop-ul:before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(2, 184, 191, 0.1);
+      border-bottom: none;
+      border-right: none;
+      transform: translateX(-50%) rotate(45deg);
+      backdrop-filter: blur(20px);
+    }
+    #am-navigation .am-drop-li {
+      list-style: none;
+      font-size: 1rem;
+      text-decoration: none;
+      opacity: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: translateY(-8px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-drop-li:nth-of-type(1) {
+      transition-delay: 0.05s;
+    }
+    #am-navigation .am-drop-li:nth-of-type(2) {
+      transition-delay: 0.1s;
+    }
+    #am-navigation .am-drop-li:nth-of-type(3) {
+      transition-delay: 0.15s;
+    }
+    #am-navigation .am-drop-li:nth-of-type(4) {
+      transition-delay: 0.2s;
+    }
+    #am-navigation .am-drop-li:nth-of-type(5) {
+      transition-delay: 0.25s;
+    }
+    #am-navigation .am-li-link.am-drop-link {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      white-space: nowrap;
+      line-height: 1.5em;
+      text-decoration: none;
+      width: 100%;
+      padding: 0.875rem 1rem;
+      box-sizing: border-box;
+      color: var(--nav-text);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.875rem;
+      border-radius: 0.75rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #am-navigation .am-li-link.am-drop-link:hover {
+      color: var(--nav-primary);
+      background: rgba(2, 184, 191, 0.08);
+      transform: translateX(4px);
+    }
+    #am-navigation .am-service-icon {
+      width: 1.375rem;
+      height: 1.375rem;
+      color: var(--nav-primary);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    #am-navigation .am-li-link.am-drop-link:hover .am-service-icon {
+      transform: scale(1.1);
+    }
+  }
+</style>
+
+<script>
+  // Mobile menu toggle
+  const navigation = document.querySelector('#am-navigation');
+  const toggle = document.querySelector('.am-toggle');
+  const menu = document.querySelector('.am-ul-wrapper');
+  const body = document.body;
+
+  toggle?.addEventListener('click', () => {
+    navigation?.classList.toggle('am-active');
+    toggle.classList.toggle('am-active');
+    body.classList.toggle('am-open');
+  });
+
+  // Mobile dropdown toggle
+  const dropdowns = document.querySelectorAll('.am-dropdown');
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', (e) => {
+      if (window.innerWidth < 1024) {
+        e.preventDefault();
+        dropdown.classList.toggle('am-active');
+      }
+    });
+  });
+
+  // Scroll behavior
+  let lastScrollTop = 0;
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      body.classList.add('scroll');
+    } else {
+      body.classList.remove('scroll');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>

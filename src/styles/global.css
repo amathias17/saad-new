@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+  /* Core palette (Design Guide) */
+  --ivory: #FAF9F6;
+  --warm-gray: #E8E4DF;
+  --sage: #A8C5B5;
+  --sage-dark: #2A5F4F;
+  --terracotta: #E8AE90;
+  --text-primary: #2C3E38;
+  --text-secondary: #5A6E68;
+  --deep-green: #1F4D3F;
+  --amber: #F59E0B;
+
+  /* Navigation palette */
+  --nav-primary: #02B8BF;
+  --nav-primary-light: #40C0F2;
+  --nav-primary-dark: #154051;
+  --nav-secondary: #40C0F2;
+  --nav-accent: #154051;
+  --nav-text: #333333;
+  --nav-text-light: #626262;
+  --nav-bg: #F6F6F6;
+  --nav-cream: #F6F6F6;
+  --nav-white: #FFFFFF;
+  --nav-shadow: rgba(2, 184, 191, 0.08);
+  --nav-shadow-md: rgba(2, 184, 191, 0.12);
+  --nav-shadow-lg: rgba(2, 184, 191, 0.18);
+
+  /* Legacy aliases for shared utilities */
+  --primary: var(--sage-dark);
+  --primaryLight: var(--sage);
+  --primaryDark: var(--deep-green);
+  --secondary: var(--amber);
+  --secondaryLight: #FEF3C7;
+  --accent: var(--sage-dark);
+  --headerColor: var(--text-primary);
+  --bodyTextColor: var(--text-secondary);
+  --bodyTextColorWhite: #FFFFFF;
+  --paper: var(--ivory);
+  --cream: var(--ivory);
+
+  /* Typography */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+
+  /* Spacing */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--ivory);
+  color: var(--text-secondary);
+}
+
+main {
+  padding-top: 8.5rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  main {
+    padding-top: 9rem;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-primary);
+}
+
+.no-main-padding {
+  padding-top: 0;
+}
+
+.am-topper {
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--sage-dark);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.am-title {
+  font-size: var(--headerFontSize);
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: inherit;
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.am-text {
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  text-align: inherit;
+  width: 100%;
+  max-width: 40.625rem;
+  margin: 0;
+  color: var(--text-secondary);
+}

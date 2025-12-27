@@ -1,0 +1,678 @@
+---
+// Dentist Navbar + Hero Component
+---
+
+<div class="dentist-landing">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 8C13.373 8 8 13.373 8 20C8 23.866 10.686 27.066 14.343 28.343C14.686 27.237 15 25.866 15 24.5C15 22.567 16.567 21 18.5 21H21.5C23.433 21 25 22.567 25 24.5C25 25.866 25.314 27.237 25.657 28.343C29.314 27.066 32 23.866 32 20C32 13.373 26.627 8 20 8Z" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Serenity Dental</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="cta-button">Book Appointment</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Accepting New Patients
+        </div>
+
+        <h1 class="hero-title">
+          Your Smile,<br/>
+          <span class="gradient-text">Our Passion</span>
+        </h1>
+
+        <p class="hero-description">
+          Experience dental care that feels different. We combine gentle expertise
+          with modern technology to make every visit comfortable and stress-free.
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-btn">
+            Schedule Your Visit
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="secondary-btn">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="24" fill="white" fill-opacity="0.9"/>
+              <path d="M20 16L30 24L20 32V16Z" fill="var(--sage-dark)"/>
+            </svg>
+            <span>Watch Our Story</span>
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years of Care</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-number">10k+</div>
+            <div class="stat-label">Happy Smiles</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-number">4.9</div>
+            <div class="stat-label">Patient Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="image-container">
+          <div class="floating-card card-1">
+            <div class="card-icon">✨</div>
+            <div class="card-text">
+              <div class="card-title">Gentle Care</div>
+              <div class="card-subtitle">Pain-free treatments</div>
+            </div>
+          </div>
+
+          <div class="floating-card card-2">
+            <div class="card-icon">🦷</div>
+            <div class="card-text">
+              <div class="card-title">Modern Tech</div>
+              <div class="card-subtitle">Advanced equipment</div>
+            </div>
+          </div>
+
+          <div class="floating-card card-3">
+            <div class="card-icon">💚</div>
+            <div class="card-text">
+              <div class="card-title">Comfort First</div>
+              <div class="card-subtitle">Relaxing environment</div>
+            </div>
+          </div>
+
+          <!-- Decorative element representing a smile/tooth -->
+          <div class="smile-illustration">
+            <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="150" cy="150" r="140" fill="url(#smile-gradient)" opacity="0.1"/>
+              <path d="M80 150C80 150 100 190 150 190C200 190 220 150 220 150" stroke="url(#smile-gradient-stroke)" stroke-width="8" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="smile-gradient" x1="150" y1="10" x2="150" y2="290">
+                  <stop offset="0%" stop-color="var(--sage)"/>
+                  <stop offset="100%" stop-color="var(--terracotta)"/>
+                </linearGradient>
+                <linearGradient id="smile-gradient-stroke" x1="80" y1="150" x2="220" y2="190">
+                  <stop offset="0%" stop-color="var(--sage-dark)"/>
+                  <stop offset="100%" stop-color="var(--terracotta)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background decorative elements -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </section>
+</div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .dentist-landing {
+    min-height: 100vh;
+    background: var(--ivory);
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(250, 249, 246, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(168, 197, 181, 0.1);
+    animation: slideDown 0.6s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--sage-dark);
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
+  .logo svg {
+    animation: fadeIn 0.8s ease-out 0.2s both;
+  }
+
+  .logo-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    animation: fadeIn 0.8s ease-out 0.3s both;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    animation: fadeIn 0.8s ease-out 0.4s both;
+  }
+
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--sage);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--sage-dark);
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .cta-button {
+    background: var(--sage-dark);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(42, 95, 79, 0.2);
+    animation: fadeIn 0.8s ease-out 0.5s both;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(42, 95, 79, 0.3);
+    background: var(--deep-green);
+  }
+
+  /* Hero Styles */
+  .hero {
+    padding: 10rem 2rem 6rem;
+    position: relative;
+  }
+
+  .hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-content {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(168, 197, 181, 0.15);
+    border: 1px solid rgba(168, 197, 181, 0.3);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--sage-dark);
+    margin-bottom: 2rem;
+  }
+
+  .badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--sage);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+  }
+
+  .hero-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--sage) 0%, var(--terracotta) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 540px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+  .primary-btn {
+    background: var(--sage-dark);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(42, 95, 79, 0.25);
+  }
+
+  .primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(42, 95, 79, 0.35);
+    background: var(--deep-green);
+  }
+
+  .primary-btn svg {
+    transition: transform 0.3s ease;
+  }
+
+  .primary-btn:hover svg {
+    transform: translateX(4px);
+  }
+
+  .secondary-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+  }
+
+  .secondary-btn svg {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+  }
+
+  .secondary-btn:hover svg {
+    transform: scale(1.1);
+  }
+
+  .secondary-btn:hover {
+    color: var(--sage-dark);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .stat-number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--sage-dark);
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  .stat-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(168, 197, 181, 0.3);
+  }
+
+  /* Hero Visual */
+  .hero-visual {
+    position: relative;
+    animation: fadeIn 1s ease-out 0.4s both;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  .smile-illustration {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    animation: floatGentle 6s ease-in-out infinite;
+  }
+
+  @keyframes floatGentle {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(-20px);
+    }
+  }
+
+  .floating-card {
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 10px 40px rgba(42, 95, 79, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(168, 197, 181, 0.2);
+  }
+
+  .card-1 {
+    top: 15%;
+    left: -5%;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .card-2 {
+    top: 55%;
+    right: -5%;
+    animation: float 5s ease-in-out infinite 1s;
+  }
+
+  .card-3 {
+    bottom: 10%;
+    left: 10%;
+    animation: float 4.5s ease-in-out infinite 0.5s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+  }
+
+  .card-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-primary);
+  }
+
+  .card-subtitle {
+    font-size: 0.825rem;
+    color: var(--text-secondary);
+  }
+
+  /* Background Blobs */
+  .bg-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    z-index: -1;
+    animation: blobFloat 20s ease-in-out infinite;
+  }
+
+  .blob-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
+    top: -10%;
+    right: 10%;
+    animation-delay: 0s;
+  }
+
+  .blob-2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--terracotta) 0%, transparent 70%);
+    bottom: 10%;
+    left: 5%;
+    animation-delay: 5s;
+  }
+
+  .blob-3 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
+    top: 40%;
+    left: 40%;
+    animation-delay: 10s;
+  }
+
+  @keyframes blobFloat {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -30px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .hero-visual {
+      order: -1;
+    }
+
+    .image-container {
+      height: 400px;
+    }
+
+    .smile-illustration {
+      width: 300px;
+      height: 300px;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 8rem 1.5rem 4rem;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero-stats {
+      gap: 1.5rem;
+    }
+
+    .stat-number {
+      font-size: 1.75rem;
+    }
+
+    .floating-card {
+      padding: 1rem;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+      position: static;
+      margin-bottom: 1rem;
+    }
+
+    .image-container {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .smile-illustration {
+      position: static;
+      transform: none;
+      margin: 2rem auto;
+    }
+  }
+</style>
