@@ -272,6 +272,21 @@
         "navbar",
         "mobile"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Reduce Hero Mobile Whitespace",
+      "description": "Adjusted mobile hero padding and visual margins to eliminate excess bottom space.",
+      "files_modified": [
+        "src/components/DentistHero.astro"
+      ],
+      "beads_issue": "saad-new-5v5",
+      "tags": [
+        "hero",
+        "mobile",
+        "layout"
+      ]
     }
   ]
 }
