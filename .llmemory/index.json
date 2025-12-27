@@ -287,6 +287,21 @@
         "mobile",
         "layout"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Further Reduce Hero Mobile Whitespace",
+      "description": "Tightened mobile hero spacing and hid the smile illustration to reduce excess vertical space.",
+      "files_modified": [
+        "src/components/DentistHero.astro"
+      ],
+      "beads_issue": "saad-new-5v5",
+      "tags": [
+        "hero",
+        "mobile",
+        "layout"
+      ]
     }
   ]
 }
