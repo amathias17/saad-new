@@ -1,16 +1,16 @@
 ---
 // Testimonials Section Component
+import SectionHeader from "./SectionHeader.astro";
 ---
 
 <section class="testimonials" id="testimonials">
   <div class="testimonials-container">
-    <div class="section-header">
-      <div class="section-badge">Testimonials</div>
-      <h2 class="section-title">What Our Patients Say</h2>
-      <p class="section-description">
-        Don't just take our word for it—hear from the people who matter most.
-      </p>
-    </div>
+    <SectionHeader
+      badge="Testimonials"
+      description="Don't just take our word for it?hear from the people who matter most."
+    >
+      What Our Patients Say
+    </SectionHeader>
 
     <div class="testimonials-grid">
       <div class="testimonial-card">
@@ -254,12 +254,6 @@
   .testimonials-container {
     max-width: 1400px;
     margin: 0 auto;
-  }
-
-  .section-header {
-    text-align: center;
-    margin-bottom: 5rem;
-    animation: fadeInUp 0.8s ease-out;
   }
 
   .testimonials-grid {

@@ -1,0 +1,69 @@
+---
+interface Props {
+  badge?: string;
+  description?: string;
+}
+
+const { badge, description } = Astro.props;
+---
+
+<div class="section-header">
+  {badge ? <div class="section-badge">{badge}</div> : null}
+  <h2 class="section-title">
+    <slot />
+  </h2>
+  {description ? <p class="section-description">{description}</p> : null}
+</div>
+
+<style>
+  .section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .section-badge {
+    display: inline-block;
+    background: rgba(168, 197, 181, 0.15);
+    border: 1px solid rgba(168, 197, 181, 0.3);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--sage-dark);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+  }
+
+  .section-description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

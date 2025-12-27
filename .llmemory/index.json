@@ -184,6 +184,22 @@
         "colors",
         "design-system"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "refactor",
+      "title": "Componentized Section Headers",
+      "description": "Added SectionHeader Astro component and applied it to Services and Testimonials per Astro component props guidance.",
+      "files_modified": [
+        "src/components/SectionHeader.astro",
+        "src/components/Services.astro",
+        "src/components/Testimonials.astro"
+      ],
+      "beads_issue": "saad-new-1yx",
+      "tags": [
+        "components",
+        "astro"
+      ]
     }
   ]
 }

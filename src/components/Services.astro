@@ -1,17 +1,16 @@
 ---
 // Services Section Component
+import SectionHeader from "./SectionHeader.astro";
 ---
 
 <section class="services" id="services">
   <div class="services-container">
-    <div class="section-header">
-      <div class="section-badge">Our Services</div>
-      <h2 class="section-title">Comprehensive Dental Care</h2>
-      <p class="section-description">
-        From routine checkups to advanced treatments, we offer everything you need
-        to maintain a healthy, beautiful smile.
-      </p>
-    </div>
+    <SectionHeader
+      badge="Our Services"
+      description="From routine checkups to advanced treatments, we offer everything you need to maintain a healthy, beautiful smile."
+    >
+      Comprehensive Dental Care
+    </SectionHeader>
 
     <div class="services-grid">
       <div class="service-card">
@@ -160,46 +159,6 @@
 
   .services-container {
     max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .section-header {
-    text-align: center;
-    margin-bottom: 5rem;
-    animation: fadeInUp 0.8s ease-out;
-  }
-
-  .section-badge {
-    display: inline-block;
-    background: rgba(168, 197, 181, 0.15);
-    border: 1px solid rgba(168, 197, 181, 0.3);
-    padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--sage-dark);
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
-
-  .section-title {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-  }
-
-  .section-description {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.7;
-    color: var(--text-secondary);
-    max-width: 680px;
     margin: 0 auto;
   }
 
