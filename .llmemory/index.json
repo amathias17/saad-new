@@ -200,6 +200,21 @@
         "components",
         "astro"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Hero Mobile Order Fix",
+      "description": "Adjusted hero layout ordering so text appears before the visual on smaller screens.",
+      "files_modified": [
+        "src/components/DentistHero.astro"
+      ],
+      "beads_issue": "saad-new-1mg",
+      "tags": [
+        "hero",
+        "mobile",
+        "layout"
+      ]
     }
   ]
 }
