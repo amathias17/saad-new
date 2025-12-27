@@ -215,6 +215,20 @@
         "mobile",
         "layout"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "cleanup",
+      "title": "Removed Placeholder Component",
+      "description": "Deleted src/components/EXAMPLE.astro to avoid shipping demo content.",
+      "files_modified": [
+        "src/components/EXAMPLE.astro"
+      ],
+      "beads_issue": "saad-new-06k",
+      "tags": [
+        "cleanup",
+        "components"
+      ]
     }
   ]
 }
