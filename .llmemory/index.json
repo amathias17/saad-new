@@ -229,6 +229,20 @@
         "cleanup",
         "components"
       ]
+    },
+    {
+      "date": "2025-12-27",
+      "type": "bug-fix",
+      "title": "Improve Featured Service Card Contrast",
+      "description": "Adjusted featured service card list item text color for better readability on dark background.",
+      "files_modified": [
+        "src/components/Services.astro"
+      ],
+      "beads_issue": "saad-new-c0l",
+      "tags": [
+        "services",
+        "contrast"
+      ]
     }
   ]
 }
