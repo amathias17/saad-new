@@ -1,0 +1,77 @@
+﻿{
+  "section": {
+    "badge": "Our Services",
+    "title": "Comprehensive Dental Care",
+    "description": "From routine checkups to advanced treatments, we offer everything you need to maintain a healthy, beautiful smile."
+  },
+  "services": [
+    {
+      "title": "Preventive Care",
+      "description": "Regular cleanings, exams, and X-rays to keep your teeth healthy and catch issues early.",
+      "items": [
+        "Professional Cleanings",
+        "Comprehensive Exams",
+        "Digital X-Rays",
+        "Oral Cancer Screening"
+      ],
+      "icon": "preventive"
+    },
+    {
+      "title": "Cosmetic Dentistry",
+      "description": "Transform your smile with our advanced cosmetic treatments and artistic expertise.",
+      "items": [
+        "Teeth Whitening",
+        "Porcelain Veneers",
+        "Smile Makeovers",
+        "Bonding & Contouring"
+      ],
+      "icon": "cosmetic",
+      "featured": true,
+      "badge": "Most Popular"
+    },
+    {
+      "title": "Restorative Care",
+      "description": "Repair and restore damaged teeth with natural-looking, long-lasting solutions.",
+      "items": [
+        "Dental Crowns",
+        "Bridges & Implants",
+        "Fillings",
+        "Root Canal Therapy"
+      ],
+      "icon": "restorative"
+    },
+    {
+      "title": "Orthodontics",
+      "description": "Straighten your teeth with modern solutions, from traditional braces to clear aligners.",
+      "items": [
+        "Clear Aligners",
+        "Traditional Braces",
+        "Retainers",
+        "Orthodontic Consultations"
+      ],
+      "icon": "orthodontics"
+    },
+    {
+      "title": "Emergency Care",
+      "description": "Immediate attention for dental emergencies. We're here when you need us most.",
+      "items": [
+        "Same-Day Appointments",
+        "Pain Relief",
+        "Broken Tooth Repair",
+        "24/7 Emergency Line"
+      ],
+      "icon": "emergency"
+    },
+    {
+      "title": "Pediatric Dentistry",
+      "description": "Gentle, specialized care for children in a fun, friendly environment.",
+      "items": [
+        "Children's Cleanings",
+        "Fluoride Treatments",
+        "Dental Sealants",
+        "Early Orthodontic Assessment"
+      ],
+      "icon": "pediatric"
+    }
+  ]
+}

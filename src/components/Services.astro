@@ -1,139 +1,80 @@
 ---
 // Services Section Component
 import SectionHeader from "./SectionHeader.astro";
+import serviceData from "../data/serviceData.json";
+
+const { section, services } = serviceData;
+
+const serviceIcons = {
+  preventive: (
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <path
+        d="M32 16C24.268 16 18 22.268 18 30C18 34.866 21.686 38.866 26.343 40.343C26.686 38.737 27 36.866 27 35C27 32.239 29.239 30 32 30C34.761 30 37 32.239 37 35C37 36.866 37.314 38.737 37.657 40.343C42.314 38.866 46 34.866 46 30C46 22.268 39.732 16 32 16Z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
+  cosmetic: (
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <path d="M32 18L35 28H45L37 34L40 44L32 38L24 44L27 34L19 28H29L32 18Z" fill="currentColor" />
+    </svg>
+  ),
+  restorative: (
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <rect x="22" y="26" width="20" height="16" rx="2" fill="currentColor" />
+      <circle cx="32" cy="34" r="3" fill="white" />
+    </svg>
+  ),
+  orthodontics: (
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <path d="M28 24H36V40H28V24Z" fill="currentColor" />
+      <path d="M24 28H28V36H24V28Z" fill="currentColor" />
+      <path d="M36 28H40V36H36V28Z" fill="currentColor" />
+    </svg>
+  ),
+  emergency: (
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <path d="M32 20L26 32L32 38L38 32L32 20Z" fill="currentColor" />
+      <circle cx="32" cy="32" r="6" fill="white" />
+    </svg>
+  ),
+  pediatric: (
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <path d="M32 22C27 22 23 26 23 31C23 36 27 40 32 40C37 40 41 36 41 31C41 26 37 22 32 22Z" fill="currentColor" />
+      <circle cx="28" cy="29" r="2" fill="white" />
+      <circle cx="36" cy="29" r="2" fill="white" />
+      <path d="M28 34C28 34 30 36 32 36C34 36 36 34 36 34" stroke="white" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  )
+};
 ---
 
 <section class="services" id="services">
   <div class="services-container">
-    <SectionHeader
-      badge="Our Services"
-      description="From routine checkups to advanced treatments, we offer everything you need to maintain a healthy, beautiful smile."
-    >
-      Comprehensive Dental Care
+    <SectionHeader badge={section.badge} description={section.description}>
+      {section.title}
     </SectionHeader>
 
     <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"/>
-            <path d="M32 16C24.268 16 18 22.268 18 30C18 34.866 21.686 38.866 26.343 40.343C26.686 38.737 27 36.866 27 35C27 32.239 29.239 30 32 30C34.761 30 37 32.239 37 35C37 36.866 37.314 38.737 37.657 40.343C42.314 38.866 46 34.866 46 30C46 22.268 39.732 16 32 16Z" fill="currentColor"/>
-          </svg>
+      {services.map((service) => (
+        <div class={`service-card${service.featured ? ' featured' : ''}`}>
+          {service.badge ? <div class="featured-badge">{service.badge}</div> : null}
+          <div class="service-icon">{serviceIcons[service.icon] ?? null}</div>
+          <h3 class="service-title">{service.title}</h3>
+          <p class="service-description">{service.description}</p>
+          <ul class="service-list">
+            {service.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
         </div>
-        <h3 class="service-title">Preventive Care</h3>
-        <p class="service-description">
-          Regular cleanings, exams, and X-rays to keep your teeth healthy and catch issues early.
-        </p>
-        <ul class="service-list">
-          <li>Professional Cleanings</li>
-          <li>Comprehensive Exams</li>
-          <li>Digital X-Rays</li>
-          <li>Oral Cancer Screening</li>
-        </ul>
-      </div>
-
-      <div class="service-card featured">
-        <div class="featured-badge">Most Popular</div>
-        <div class="service-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"/>
-            <path d="M32 18L35 28H45L37 34L40 44L32 38L24 44L27 34L19 28H29L32 18Z" fill="currentColor"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Cosmetic Dentistry</h3>
-        <p class="service-description">
-          Transform your smile with our advanced cosmetic treatments and artistic expertise.
-        </p>
-        <ul class="service-list">
-          <li>Teeth Whitening</li>
-          <li>Porcelain Veneers</li>
-          <li>Smile Makeovers</li>
-          <li>Bonding & Contouring</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"/>
-            <rect x="22" y="26" width="20" height="16" rx="2" fill="currentColor"/>
-            <circle cx="32" cy="34" r="3" fill="white"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Restorative Care</h3>
-        <p class="service-description">
-          Repair and restore damaged teeth with natural-looking, long-lasting solutions.
-        </p>
-        <ul class="service-list">
-          <li>Dental Crowns</li>
-          <li>Bridges & Implants</li>
-          <li>Fillings</li>
-          <li>Root Canal Therapy</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"/>
-            <path d="M28 24H36V40H28V24Z" fill="currentColor"/>
-            <path d="M24 28H28V36H24V28Z" fill="currentColor"/>
-            <path d="M36 28H40V36H36V28Z" fill="currentColor"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Orthodontics</h3>
-        <p class="service-description">
-          Straighten your teeth with modern solutions, from traditional braces to clear aligners.
-        </p>
-        <ul class="service-list">
-          <li>Clear Aligners</li>
-          <li>Traditional Braces</li>
-          <li>Retainers</li>
-          <li>Orthodontic Consultations</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"/>
-            <path d="M32 20L26 32L32 38L38 32L32 20Z" fill="currentColor"/>
-            <circle cx="32" cy="32" r="6" fill="white"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Emergency Care</h3>
-        <p class="service-description">
-          Immediate attention for dental emergencies. We're here when you need us most.
-        </p>
-        <ul class="service-list">
-          <li>Same-Day Appointments</li>
-          <li>Pain Relief</li>
-          <li>Broken Tooth Repair</li>
-          <li>24/7 Emergency Line</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"/>
-            <path d="M32 22C27 22 23 26 23 31C23 36 27 40 32 40C37 40 41 36 41 31C41 26 37 22 32 22Z" fill="currentColor"/>
-            <circle cx="28" cy="29" r="2" fill="white"/>
-            <circle cx="36" cy="29" r="2" fill="white"/>
-            <path d="M28 34C28 34 30 36 32 36C34 36 36 34 36 34" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Pediatric Dentistry</h3>
-        <p class="service-description">
-          Gentle, specialized care for children in a fun, friendly environment.
-        </p>
-        <ul class="service-list">
-          <li>Children's Cleanings</li>
-          <li>Fluoride Treatments</li>
-          <li>Dental Sealants</li>
-          <li>Early Orthodontic Assessment</li>
-        </ul>
-      </div>
+      ))}
     </div>
   </div>
 </section>

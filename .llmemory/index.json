@@ -425,6 +425,22 @@
                                      "beads",
                                      "cleanup"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "refactor",
+                        "title":  "Services Data Source",
+                        "description":  "Moved Services section content to src/data/serviceData.json and rendered cards dynamically with icon mapping.",
+                        "files_modified":  [
+                                               "src/components/Services.astro",
+                                               "src/data/serviceData.json"
+                                           ],
+                        "beads_issue":  "saad-new-s6k",
+                        "tags":  [
+                                     "services",
+                                     "data",
+                                     "astro"
+                                 ]
                     }
                 ]
 }
