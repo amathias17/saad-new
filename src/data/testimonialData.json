@@ -7,20 +7,20 @@
   "testimonials": [
     {
       "rating": 5,
-      "text": "I've always been anxious about dental visits, but the team at Serenity made me feel completely at ease. The atmosphere is so calming, and Dr. Sarah took the time to explain everything. Best dental experience I've ever had!",
+      "text": "I had a truly outstanding experience with Dr. Saad and his team. Over the course of two root canal treatments, everything was handled with remarkable ease and professionalism. Dr. Saad is a master of his craft, and his staff reflect that same level of expertise and dedication. The office environment is welcoming, efficient, and reassuring, making what could have been a stressful experience surprisingly comfortable. I'm extremely pleased with both the procedures and the overall care I received. I wholeheartedly recommend this practice to anyone in the area seeking top-notch endodontic treatment.",
       "author": {
-        "name": "Jessica Martinez",
-        "treatment": "Cosmetic Dentistry Patient",
-        "initials": "JM"
+        "name": "Wally Zapotoczny",
+        "treatment": "Root Canal Treatment",
+        "initials": "WZ"
       }
     },
     {
       "rating": 5,
-      "text": "After years of avoiding the dentist due to bad experiences, I finally found a place that truly cares. The technology is cutting-edge, but what really sets them apart is the genuine compassion from every team member. My smile has never looked better!",
+      "text": "Outstanding practice. Dr. Saad is very personable and was extremely gentle with my recent root canal work. He talks to you before and after the procedure, explaining everything. The entire staff is awesome and accommodating, and the office is pleasant and very clean.",
       "author": {
-        "name": "Robert Johnson",
-        "treatment": "Full Smile Makeover",
-        "initials": "RJ"
+        "name": "Nancy Pufka",
+        "treatment": "Root Canal Treatment",
+        "initials": "NP"
       },
       "featured": true,
       "badge": "Featured Review"
