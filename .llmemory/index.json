@@ -494,6 +494,22 @@
                                      "data",
                                      "astro"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "docs",
+                        "title":  "MCP Usage Requirement",
+                        "description":  "Added instruction to always run sequential-thinking at task start and use MCPs when needed.",
+                        "files_modified":  [
+                                               "AGENTS.md",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "docs",
+                                     "process",
+                                     "mcp"
+                                 ]
                     }
                 ]
 }

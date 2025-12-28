@@ -35,6 +35,7 @@ bd sync               # Sync with git
 ## MCP Servers
 
 Use MCP servers only when you need external docs, repository context, or structured data that is not in the local workspace. Prefer MCP resources/templates over web search when available.
+Always run `sequential-thinking` when starting a task.
 
 **Available MCPs and usage:**
 - `list_mcp_resources` / `list_mcp_resource_templates`: discover what data a server exposes before fetching anything.
