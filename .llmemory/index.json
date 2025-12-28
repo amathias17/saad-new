@@ -458,6 +458,21 @@
                                      "astro",
                                      "bugfix"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "docs",
+                        "title":  "Require Pre-Commit Error Checks",
+                        "description":  "Added instruction in AGENTS.md to check for errors and fix them before committing.",
+                        "files_modified":  [
+                                               "AGENTS.md",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "docs",
+                                     "process"
+                                 ]
                     }
                 ]
 }

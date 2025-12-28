@@ -79,6 +79,7 @@ Use MCP servers only when you need external docs, repository context, or structu
    bd close <issue-id>  # If task is complete
    bd update <issue-id> --status in_progress  # If still working
    ```
+3. **Check for errors before committing** - Run relevant checks (tests/build) and fix any errors prior to commit.
 
 **WHY THIS MATTERS:** llmemory provides continuity between sessions. Without updates, the next agent won't know what you did or why, leading to duplicated effort or inconsistent implementations.
 
