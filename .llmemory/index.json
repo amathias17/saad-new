@@ -410,6 +410,21 @@
                                      "windows",
                                      "investigation"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "cleanup",
+                        "title":  "Close Obsolete Navbar Social Links Task",
+                        "description":  "Closed qc3 since current navbar does not include social links.",
+                        "files_modified":  [
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-qc3",
+                        "tags":  [
+                                     "beads",
+                                     "cleanup"
+                                 ]
                     }
                 ]
 }
