@@ -526,6 +526,22 @@
                                      "data",
                                      "astro"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "verification",
+                        "title":  "Verify Global Color Tokens",
+                        "description":  "Confirmed global.css tokens align with the design guide palette; no changes required.",
+                        "files_modified":  [
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-nnq",
+                        "tags":  [
+                                     "design-system",
+                                     "tokens",
+                                     "verification"
+                                 ]
                     }
                 ]
 }
