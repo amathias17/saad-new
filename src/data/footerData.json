@@ -40,7 +40,7 @@
     {
       "title": "Company",
       "links": [
-        { "label": "About Us", "href": "#about" },
+        { "label": "About Us", "href": "/about" },
         { "label": "Our Team", "href": "#team" },
         { "label": "Testimonials", "href": "#testimonials" },
         { "label": "Blog", "href": "#blog" },

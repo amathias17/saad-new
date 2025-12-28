@@ -664,7 +664,7 @@
                         "date":  "2025-12-27",
                         "type":  "feature",
                         "title":  "Created About Page",
-                        "description":  "Built comprehensive standalone About page featuring Dr. Saad's background, expertise, philosophy, and practice facilities with full design system consistency.",
+                        "description":  "Built comprehensive standalone About page featuring Dr. Saad\u0027s background, expertise, philosophy, and practice facilities with full design system consistency.",
                         "files_modified":  [
                                                "src/pages/about.astro",
                                                "src/data/navData.json",
@@ -693,6 +693,56 @@
                                      "about",
                                      "navbar",
                                      "bugfix"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "docs",
+                        "title":  "Adjust Sequential-Thinking Rule",
+                        "description":  "Updated AGENTS.md to require sequential-thinking only when starting a beads task, not when creating a beads task.",
+                        "files_modified":  [
+                                               "AGENTS.md",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "docs",
+                                     "process",
+                                     "mcp"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "content",
+                        "title":  "Link About in Footer",
+                        "description":  "Updated footer Company link to point About Us to /about.",
+                        "files_modified":  [
+                                               "src/data/footerData.json",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-9ae",
+                        "tags":  [
+                                     "footer",
+                                     "links",
+                                     "about"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "bug-fix",
+                        "title":  "Link Navbar Logo to Home",
+                        "description":  "Converted the navbar logo container into a link pointing to /. Added link styling to preserve appearance.",
+                        "files_modified":  [
+                                               "src/components/DentistHero.astro",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-2s8",
+                        "tags":  [
+                                     "navbar",
+                                     "links",
+                                     "ux"
                                  ]
                     }
                 ]
