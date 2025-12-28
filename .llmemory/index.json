@@ -780,6 +780,40 @@
                 "seo",
                 "content"
             ]
+        },
+        {
+            "date": "2025-12-28",
+            "type": "content",
+            "title": "Grammar Polish Service Descriptions",
+            "description": "Applied minor grammar and clarity edits to service descriptions in serviceData.json using grammar-tone-checker guidance.",
+            "files_modified": [
+                "src/data/serviceData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/facts.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "services",
+                "grammar",
+                "content"
+            ]
+        },
+        {
+            "date": "2025-12-28",
+            "type": "content",
+            "title": "Grammar Check All Service Descriptions",
+            "description": "Applied minimal grammar and clarity edits to all six service descriptions in serviceData.json using grammar-tone-checker guidance.",
+            "files_modified": [
+                "src/data/serviceData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/facts.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "services",
+                "grammar",
+                "content"
+            ]
         }
     ]
 }

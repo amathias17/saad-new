@@ -7,7 +7,7 @@
   "services": [
     {
       "title": "Apexogenesis",
-      "description": "Apexogenesis is a vital pulp therapy procedure that encourages continued physiological root-end development in immature teeth.",
+      "description": "Apexogenesis is a vital pulp therapy procedure that encourages continued physiologic root-end development in immature teeth.",
       "items": [
         "Vital pulp therapy",
         "Root development support",
@@ -18,7 +18,7 @@
     },
     {
       "title": "Revascularization",
-      "description": "Revascularization is a regenerative endodontic method that promotes vital tissue growth to replace necrotic pulp, most often in open apex teeth.",
+      "description": "Revascularization is a regenerative endodontic method that promotes vital tissue growth to replace necrotic pulp tissue, most often in open-apex teeth.",
       "items": [
         "Regenerative approach",
         "Vital tissue regrowth",
@@ -29,7 +29,7 @@
     },
     {
       "title": "Post Removal",
-      "description": "Post removal is a procedure to remove a custom or preformed rod cemented into a root canal of an endodontically treated tooth for core retention.",
+      "description": "Post removal is a procedure to remove a custom or preformed rod cemented into the root canal of an endodontically treated tooth, providing core retention.",
       "items": [
         "Endodontic post removal",
         "Preserve tooth structure",
@@ -51,7 +51,7 @@
     },
     {
       "title": "Separated Instrument Removal",
-      "description": "Separated instrument removal retrieves broken endodontic instruments from narrow, complex canals using specialized techniques.",
+      "description": "Separated instrument removal retrieves broken endodontic instruments from narrow, complex canals by using specialized techniques.",
       "items": [
         "Locate separated instruments",
         "Microsurgical retrieval",
@@ -62,7 +62,7 @@
     },
     {
       "title": "Perforation Repair",
-      "description": "Perforation repair treats a communication between the root canal system and the external tooth surface caused by pathological or mechanical reasons, sealing it to prevent leakage and reinfection.",
+      "description": "Perforation repair treats a communication between the root canal system and the external tooth surface caused by pathological or mechanical factors and seals it to prevent leakage and reinfection.",
       "items": [
         "Seal canal perforations",
         "Biocompatible materials",
