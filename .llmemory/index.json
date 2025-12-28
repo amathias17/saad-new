@@ -393,6 +393,23 @@
                                      "dropdown",
                                      "data"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "investigation",
+                        "title":  "Astro Build EPERM",
+                        "description":  "Build fails because Node child_process spawn is blocked, causing Vite to error when running net use on Windows.",
+                        "files_modified":  [
+                                               ".llmemory/facts.jsonl",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-m6o",
+                        "tags":  [
+                                     "build",
+                                     "windows",
+                                     "investigation"
+                                 ]
                     }
                 ]
 }
