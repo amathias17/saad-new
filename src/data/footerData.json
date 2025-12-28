@@ -1,0 +1,96 @@
+﻿{
+  "brand": {
+    "name": "Serenity Dental",
+    "tagline": "Your partner in achieving and maintaining a healthy, beautiful smile. Experience dental care that feels different.",
+    "socials": [
+      {
+        "label": "Facebook",
+        "href": "#",
+        "icon": "facebook"
+      },
+      {
+        "label": "Instagram",
+        "href": "#",
+        "icon": "instagram"
+      },
+      {
+        "label": "Twitter",
+        "href": "#",
+        "icon": "twitter"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#",
+        "icon": "linkedin"
+      }
+    ]
+  },
+  "columns": [
+    {
+      "title": "Services",
+      "links": [
+        { "label": "Preventive Care", "href": "#services" },
+        { "label": "Cosmetic Dentistry", "href": "#services" },
+        { "label": "Restorative Care", "href": "#services" },
+        { "label": "Orthodontics", "href": "#services" },
+        { "label": "Emergency Care", "href": "#services" },
+        { "label": "Pediatric Dentistry", "href": "#services" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "href": "#about" },
+        { "label": "Our Team", "href": "#team" },
+        { "label": "Testimonials", "href": "#testimonials" },
+        { "label": "Blog", "href": "#blog" },
+        { "label": "Careers", "href": "#careers" },
+        { "label": "Contact", "href": "#contact" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "FAQ", "href": "#faq" },
+        { "label": "Insurance & Billing", "href": "#insurance" },
+        { "label": "Patient Forms", "href": "#forms" },
+        { "label": "COVID-19 Update", "href": "#covid" },
+        { "label": "Privacy Policy", "href": "#privacy" },
+        { "label": "Terms of Service", "href": "#terms" }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "Contact Us",
+    "addressLines": [
+      "123 Dental Street",
+      "Suite 100",
+      "City, ST 12345"
+    ],
+    "phone": {
+      "label": "(555) 123-4567",
+      "value": "+15551234567"
+    },
+    "email": {
+      "label": "hello@serenitydental.com",
+      "value": "hello@serenitydental.com"
+    }
+  },
+  "hours": {
+    "title": "Office Hours",
+    "items": [
+      { "label": "Mon - Fri", "value": "8:00 AM - 6:00 PM" },
+      { "label": "Saturday", "value": "9:00 AM - 3:00 PM" },
+      { "label": "Sunday", "value": "Closed" }
+    ]
+  },
+  "bottom": {
+    "copyright": "(c) 2024 Serenity Dental. All rights reserved.",
+    "divider": "|",
+    "links": [
+      { "label": "Privacy Policy", "href": "#privacy" },
+      { "label": "Terms of Service", "href": "#terms" },
+      { "label": "Accessibility", "href": "#accessibility" }
+    ]
+  }
+}

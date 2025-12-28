@@ -473,6 +473,27 @@
                                      "docs",
                                      "process"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "refactor",
+                        "title":  "Footer Data Source",
+                        "description":  "Moved footer content to src/data/footerData.json and rendered it in Footer.astro with typed icon maps; added astro check deps.",
+                        "files_modified":  [
+                                               "src/components/Footer.astro",
+                                               "src/data/footerData.json",
+                                               "src/components/Services.astro",
+                                               "package.json",
+                                               "package-lock.json",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-avg",
+                        "tags":  [
+                                     "footer",
+                                     "data",
+                                     "astro"
+                                 ]
                     }
                 ]
 }
