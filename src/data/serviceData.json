@@ -7,7 +7,7 @@
   "services": [
     {
       "title": "Apexogenesis",
-      "description": "A vital pulp therapy procedure performed to encourage continued physiological development and formation of the root end, frequently used to describe vital pulp therapy performed to encourage the continuation of this process.",
+      "description": "Apexogenesis is a vital pulp therapy procedure that encourages continued physiological root-end development in immature teeth.",
       "items": [
         "Vital pulp therapy",
         "Root development support",
@@ -18,7 +18,7 @@
     },
     {
       "title": "Revascularization",
-      "description": "A method to induce the formation of vital tissue to grow back in place of the necrotic pulp tissue mainly in open apex teeth.",
+      "description": "Revascularization is a regenerative endodontic method that promotes vital tissue growth to replace necrotic pulp, most often in open apex teeth.",
       "items": [
         "Regenerative approach",
         "Vital tissue regrowth",
@@ -29,7 +29,7 @@
     },
     {
       "title": "Post Removal",
-      "description": "A procedure to remove a post from inside the tooth. A post is a custom or preformed rod that is fitted and cemented into the root canal of an endodontically treated tooth for core retention.",
+      "description": "Post removal is a procedure to remove a custom or preformed rod cemented into a root canal of an endodontically treated tooth for core retention.",
       "items": [
         "Endodontic post removal",
         "Preserve tooth structure",
@@ -40,7 +40,7 @@
     },
     {
       "title": "Silver Point Removal",
-      "description": "This is an old technique that was used more in the past. The silver point is a rigid radiopaque cone produced from almost pure silver in a variety of sizes, usually corresponding to the diameters and tapers of root canal files, historically used to obturate root canals in conjunction with a sealer.",
+      "description": "Silver point removal addresses an older obturation method that used rigid, radiopaque silver cones sized to root canal files and placed with a sealer.",
       "items": [
         "Remove historic silver points",
         "Radiopaque cone extraction",
@@ -51,7 +51,7 @@
     },
     {
       "title": "Separated Instrument Removal",
-      "description": "Since the canals inside the teeth are very narrow with often many complexities in the shape, diameter and length, the instruments used during the endodontic (root canal) treatment could separate and stay inside the tooth. In our office we use many techniques to retrieve these separated instruments.",
+      "description": "Separated instrument removal retrieves broken endodontic instruments from narrow, complex canals using specialized techniques.",
       "items": [
         "Locate separated instruments",
         "Microsurgical retrieval",
@@ -62,7 +62,7 @@
     },
     {
       "title": "Perforation Repair",
-      "description": "Perforation is a communication between the root canal system (the inside of the tooth) and the external tooth surface, which could be due to pathological or mechanical reasons. We use different materials and techniques to repair these communications to avoid future leakage and re-infection of the tooth.",
+      "description": "Perforation repair treats a communication between the root canal system and the external tooth surface caused by pathological or mechanical reasons, sealing it to prevent leakage and reinfection.",
       "items": [
         "Seal canal perforations",
         "Biocompatible materials",
