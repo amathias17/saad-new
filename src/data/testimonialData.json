@@ -1,0 +1,72 @@
+﻿{
+  "section": {
+    "badge": "Testimonials",
+    "title": "What Our Patients Say",
+    "description": "Don't just take our word for it; hear from the people who matter most."
+  },
+  "testimonials": [
+    {
+      "rating": 5,
+      "text": "I've always been anxious about dental visits, but the team at Serenity made me feel completely at ease. The atmosphere is so calming, and Dr. Sarah took the time to explain everything. Best dental experience I've ever had!",
+      "author": {
+        "name": "Jessica Martinez",
+        "treatment": "Cosmetic Dentistry Patient",
+        "initials": "JM"
+      }
+    },
+    {
+      "rating": 5,
+      "text": "After years of avoiding the dentist due to bad experiences, I finally found a place that truly cares. The technology is cutting-edge, but what really sets them apart is the genuine compassion from every team member. My smile has never looked better!",
+      "author": {
+        "name": "Robert Johnson",
+        "treatment": "Full Smile Makeover",
+        "initials": "RJ"
+      },
+      "featured": true,
+      "badge": "Featured Review"
+    },
+    {
+      "rating": 5,
+      "text": "Bringing my kids here was the best decision! They actually look forward to their appointments now. The staff is incredible with children, making it fun and educational. Thank you for making dental care a positive experience for our whole family!",
+      "author": {
+        "name": "Emily Patterson",
+        "treatment": "Family Dentistry Patient",
+        "initials": "EP"
+      }
+    },
+    {
+      "rating": 5,
+      "text": "Professional, efficient, and painless. My root canal was completely comfortable, which I didn't think was possible! The modern equipment and skilled hands made all the difference. Highly recommend to anyone seeking top-tier dental care.",
+      "author": {
+        "name": "Michael Chen",
+        "treatment": "Root Canal Treatment",
+        "initials": "MC"
+      }
+    },
+    {
+      "rating": 5,
+      "text": "The invisalign treatment changed my life! Not only is my smile straight and beautiful, but the entire process was smooth and well-explained. The team checked in regularly and made sure I was comfortable every step of the way.",
+      "author": {
+        "name": "Sarah Thompson",
+        "treatment": "Orthodontic Treatment",
+        "initials": "ST"
+      }
+    },
+    {
+      "rating": 5,
+      "text": "When I had a dental emergency on a Saturday, they got me in immediately. The pain relief was instant, and they worked me into their schedule for follow-up care. This is what patient-centered dentistry looks like!",
+      "author": {
+        "name": "David Williams",
+        "treatment": "Emergency Care Patient",
+        "initials": "DW"
+      }
+    }
+  ],
+  "summary": {
+    "score": "4.9",
+    "stars": 5,
+    "reviewCount": "Based on 847+ reviews",
+    "platforms": ["Google", "Yelp", "Facebook"],
+    "divider": "|"
+  }
+}

@@ -1,242 +1,61 @@
----
+﻿---
 // Testimonials Section Component
 import SectionHeader from "./SectionHeader.astro";
+import testimonialData from "../data/testimonialData.json";
+
+const { section, testimonials, summary } = testimonialData;
 ---
 
 <section class="testimonials" id="testimonials">
   <div class="testimonials-container">
-    <SectionHeader
-      badge="Testimonials"
-      description="Don't just take our word for it?hear from the people who matter most."
-    >
-      What Our Patients Say
+    <SectionHeader badge={section.badge} description={section.description}>
+      {section.title}
     </SectionHeader>
 
     <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars">
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-        </div>
-        <p class="testimonial-text">
-          "I've always been anxious about dental visits, but the team at Serenity made me
-          feel completely at ease. The atmosphere is so calming, and Dr. Sarah took the time
-          to explain everything. Best dental experience I've ever had!"
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">JM</div>
-          <div class="author-info">
-            <div class="author-name">Jessica Martinez</div>
-            <div class="author-treatment">Cosmetic Dentistry Patient</div>
+      {testimonials.map((testimonial) => (
+        <div class={`testimonial-card${testimonial.featured ? " featured" : ""}`}>
+          {testimonial.badge ? <div class="featured-badge">{testimonial.badge}</div> : null}
+          <div class="stars">
+            {Array.from({ length: testimonial.rating }).map(() => (
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"></path>
+              </svg>
+            ))}
+          </div>
+          <p class="testimonial-text">"{testimonial.text}"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">{testimonial.author.initials}</div>
+            <div class="author-info">
+              <div class="author-name">{testimonial.author.name}</div>
+              <div class="author-treatment">{testimonial.author.treatment}</div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="testimonial-card featured">
-        <div class="featured-badge">Featured Review</div>
-        <div class="stars">
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-        </div>
-        <p class="testimonial-text">
-          "After years of avoiding the dentist due to bad experiences, I finally found a place
-          that truly cares. The technology is cutting-edge, but what really sets them apart is
-          the genuine compassion from every team member. My smile has never looked better!"
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">RJ</div>
-          <div class="author-info">
-            <div class="author-name">Robert Johnson</div>
-            <div class="author-treatment">Full Smile Makeover</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-        </div>
-        <p class="testimonial-text">
-          "Bringing my kids here was the best decision! They actually look forward to their
-          appointments now. The staff is incredible with children, making it fun and educational.
-          Thank you for making dental care a positive experience for our whole family!"
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">EP</div>
-          <div class="author-info">
-            <div class="author-name">Emily Patterson</div>
-            <div class="author-treatment">Family Dentistry Patient</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-        </div>
-        <p class="testimonial-text">
-          "Professional, efficient, and painless. My root canal was completely comfortable,
-          which I didn't think was possible! The modern equipment and skilled hands made all
-          the difference. Highly recommend to anyone seeking top-tier dental care."
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">MC</div>
-          <div class="author-info">
-            <div class="author-name">Michael Chen</div>
-            <div class="author-treatment">Root Canal Treatment</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-        </div>
-        <p class="testimonial-text">
-          "The invisalign treatment changed my life! Not only is my smile straight and beautiful,
-          but the entire process was smooth and well-explained. The team checked in regularly
-          and made sure I was comfortable every step of the way."
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">ST</div>
-          <div class="author-info">
-            <div class="author-name">Sarah Thompson</div>
-            <div class="author-treatment">Orthodontic Treatment</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-          <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-          </svg>
-        </div>
-        <p class="testimonial-text">
-          "When I had a dental emergency on a Saturday, they got me in immediately.
-          The pain relief was instant, and they worked me into their schedule for follow-up care.
-          This is what patient-centered dentistry looks like!"
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">DW</div>
-          <div class="author-info">
-            <div class="author-name">David Williams</div>
-            <div class="author-treatment">Emergency Care Patient</div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
 
     <div class="rating-summary">
       <div class="summary-content">
         <div class="summary-score">
-          <div class="score-number">4.9</div>
+          <div class="score-number">{summary.score}</div>
           <div class="score-stars">
-            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-            </svg>
-            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-            </svg>
-            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-            </svg>
-            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-            </svg>
-            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"/>
-            </svg>
+            {Array.from({ length: summary.stars }).map(() => (
+              <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L15 9L22 9L16.5 13.5L18.5 20.5L12 16L5.5 20.5L7.5 13.5L2 9L9 9L12 2Z"></path>
+              </svg>
+            ))}
           </div>
         </div>
         <div class="summary-text">
-          <div class="summary-count">Based on 847+ reviews</div>
+          <div class="summary-count">{summary.reviewCount}</div>
           <div class="summary-platforms">
-            <span>Google</span>
-            <span>•</span>
-            <span>Yelp</span>
-            <span>•</span>
-            <span>Facebook</span>
+            {summary.platforms.map((platform, index) => (
+              <>
+                <span>{platform}</span>
+                {index < summary.platforms.length - 1 ? <span>{summary.divider}</span> : null}
+              </>
+            ))}
           </div>
         </div>
       </div>

@@ -510,6 +510,22 @@
                                      "process",
                                      "mcp"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "refactor",
+                        "title":  "Testimonials Data Source",
+                        "description":  "Moved testimonials content to src/data/testimonialData.json and rendered the section dynamically.",
+                        "files_modified":  [
+                                               "src/components/Testimonials.astro",
+                                               "src/data/testimonialData.json"
+                                           ],
+                        "beads_issue":  "saad-new-n2s",
+                        "tags":  [
+                                     "testimonials",
+                                     "data",
+                                     "astro"
+                                 ]
                     }
                 ]
 }
