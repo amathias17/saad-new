@@ -542,6 +542,21 @@
                                      "tokens",
                                      "verification"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "cleanup",
+                        "title":  "Remove Unused Navbar Variable",
+                        "description":  "Deleted unused menu query in Navbar script to satisfy astro check.",
+                        "files_modified":  [
+                                               "src/components/Navbar.astro"
+                                           ],
+                        "beads_issue":  "saad-new-3bd",
+                        "tags":  [
+                                     "navbar",
+                                     "cleanup",
+                                     "lint"
+                                 ]
                     }
                 ]
 }
