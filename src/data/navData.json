@@ -1,0 +1,39 @@
+﻿{
+  "logoText": "Serenity Dental",
+  "links": [
+    {
+      "label": "Services",
+      "href": "#services",
+      "children": [
+        {
+          "label": "Preventive Care",
+          "href": "#services"
+        },
+        {
+          "label": "Advanced Treatments",
+          "href": "#services"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Our Team",
+      "href": "#team"
+    },
+    {
+      "label": "Testimonials",
+      "href": "#testimonials"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ],
+  "cta": {
+    "label": "Book Appointment",
+    "href": "#contact"
+  }
+}
