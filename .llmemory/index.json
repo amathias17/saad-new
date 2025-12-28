@@ -1,4 +1,4 @@
-﻿{
+{
     "version":  1,
     "entries":  [
                     {
@@ -597,6 +597,102 @@
                                      "footer",
                                      "icons",
                                      "styles"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "bug-fix",
+                        "title":  "Footer Social Icons Visible",
+                        "description":  "Applied global svg sizing to footer social icons rendered via set:html.",
+                        "files_modified":  [
+                                               "src/components/Footer.astro"
+                                           ],
+                        "tags":  [
+                                     "footer",
+                                     "icons",
+                                     "bugfix"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "verification",
+                        "title":  "Breakpoint Visual Check",
+                        "description":  "Used Playwright to review 1280/1024/768 layouts; no issues found.",
+                        "files_modified":  [
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "playwright",
+                                     "responsive",
+                                     "verification"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "content",
+                        "title":  "Update Root Canal Service",
+                        "description":  "Replaced the first service card with Root Canal Treatment content and items, using the restorative icon.",
+                        "files_modified":  [
+                                               "src/data/serviceData.json",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "services",
+                                     "content",
+                                     "data"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "content",
+                        "title":  "Update Apicoectomy Service",
+                        "description":  "Replaced the second service card with Apicoectomy or Root-End Surgery content, items, and restorative icon.",
+                        "files_modified":  [
+                                               "src/data/serviceData.json",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "services",
+                                     "content",
+                                     "data"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "feature",
+                        "title":  "Created About Page",
+                        "description":  "Built comprehensive standalone About page featuring Dr. Saad's background, expertise, philosophy, and practice facilities with full design system consistency.",
+                        "files_modified":  [
+                                               "src/pages/about.astro",
+                                               "src/data/navData.json",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "tags":  [
+                                     "about",
+                                     "page",
+                                     "astro",
+                                     "content"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "bug-fix",
+                        "title":  "Fix About Page Navbar",
+                        "description":  "Replaced old Navbar component with DentistHero navbar on About page for consistency with homepage design.",
+                        "files_modified":  [
+                                               "src/pages/about.astro",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-0sp",
+                        "tags":  [
+                                     "about",
+                                     "navbar",
+                                     "bugfix"
                                  ]
                     }
                 ]

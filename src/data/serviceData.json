@@ -6,27 +6,27 @@
   },
   "services": [
     {
-      "title": "Preventive Care",
-      "description": "Regular cleanings, exams, and X-rays to keep your teeth healthy and catch issues early.",
+      "title": "Root Canal Treatment",
+      "description": "A procedure to remove vital or necrotic pulp tissue (nerve) from the root canal system (canals) within the tooth, followed by cleaning, shaping, and obturating the canals.",
       "items": [
-        "Professional Cleanings",
-        "Comprehensive Exams",
-        "Digital X-Rays",
-        "Oral Cancer Screening"
+        "Pulp Tissue Removal",
+        "Canal Cleaning",
+        "Canal Shaping",
+        "Canal Obturation"
       ],
-      "icon": "preventive"
+      "icon": "orthodontics"
     },
     {
-      "title": "Cosmetic Dentistry",
-      "description": "Transform your smile with our advanced cosmetic treatments and artistic expertise.",
+      "title": "Apicoectomy or Root-End Surgery",
+      "description": "The surgical removal of the apical portion of a root and adherent soft tissue may be performed before root-end preparation for a root-end filling, or as a definitive treatment.",
       "items": [
-        "Teeth Whitening",
-        "Porcelain Veneers",
-        "Smile Makeovers",
-        "Bonding & Contouring"
+        "Apical Root Resection",
+        "Soft Tissue Removal",
+        "Root-End Preparation",
+        "Root-End Filling"
       ],
-      "icon": "cosmetic",
-      "featured": true,
+      "icon": "restorative",
+      "featured": false,
       "badge": "Most Popular"
     },
     {
