@@ -441,6 +441,23 @@
                                      "data",
                                      "astro"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "bug-fix",
+                        "title":  "Fix Services Icon Rendering",
+                        "description":  "Replaced JSX icons in Services frontmatter with SVG strings and rendered them via set:html to satisfy Astro parsing.",
+                        "files_modified":  [
+                                               "src/components/Services.astro",
+                                               ".llmemory/tasks.jsonl",
+                                               ".llmemory/index.json"
+                                           ],
+                        "beads_issue":  "saad-new-s6k",
+                        "tags":  [
+                                     "services",
+                                     "astro",
+                                     "bugfix"
+                                 ]
                     }
                 ]
 }

@@ -6,52 +6,52 @@ import serviceData from "../data/serviceData.json";
 const { section, services } = serviceData;
 
 const serviceIcons = {
-  preventive: (
+  preventive: `
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"></circle>
       <path
         d="M32 16C24.268 16 18 22.268 18 30C18 34.866 21.686 38.866 26.343 40.343C26.686 38.737 27 36.866 27 35C27 32.239 29.239 30 32 30C34.761 30 37 32.239 37 35C37 36.866 37.314 38.737 37.657 40.343C42.314 38.866 46 34.866 46 30C46 22.268 39.732 16 32 16Z"
         fill="currentColor"
-      />
+      ></path>
     </svg>
-  ),
-  cosmetic: (
+  `,
+  cosmetic: `
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
-      <path d="M32 18L35 28H45L37 34L40 44L32 38L24 44L27 34L19 28H29L32 18Z" fill="currentColor" />
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"></circle>
+      <path d="M32 18L35 28H45L37 34L40 44L32 38L24 44L27 34L19 28H29L32 18Z" fill="currentColor"></path>
     </svg>
-  ),
-  restorative: (
+  `,
+  restorative: `
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
-      <rect x="22" y="26" width="20" height="16" rx="2" fill="currentColor" />
-      <circle cx="32" cy="34" r="3" fill="white" />
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"></circle>
+      <rect x="22" y="26" width="20" height="16" rx="2" fill="currentColor"></rect>
+      <circle cx="32" cy="34" r="3" fill="white"></circle>
     </svg>
-  ),
-  orthodontics: (
+  `,
+  orthodontics: `
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
-      <path d="M28 24H36V40H28V24Z" fill="currentColor" />
-      <path d="M24 28H28V36H24V28Z" fill="currentColor" />
-      <path d="M36 28H40V36H36V28Z" fill="currentColor" />
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"></circle>
+      <path d="M28 24H36V40H28V24Z" fill="currentColor"></path>
+      <path d="M24 28H28V36H24V28Z" fill="currentColor"></path>
+      <path d="M36 28H40V36H36V28Z" fill="currentColor"></path>
     </svg>
-  ),
-  emergency: (
+  `,
+  emergency: `
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
-      <path d="M32 20L26 32L32 38L38 32L32 20Z" fill="currentColor" />
-      <circle cx="32" cy="32" r="6" fill="white" />
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"></circle>
+      <path d="M32 20L26 32L32 38L38 32L32 20Z" fill="currentColor"></path>
+      <circle cx="32" cy="32" r="6" fill="white"></circle>
     </svg>
-  ),
-  pediatric: (
+  `,
+  pediatric: `
     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1" />
-      <path d="M32 22C27 22 23 26 23 31C23 36 27 40 32 40C37 40 41 36 41 31C41 26 37 22 32 22Z" fill="currentColor" />
-      <circle cx="28" cy="29" r="2" fill="white" />
-      <circle cx="36" cy="29" r="2" fill="white" />
-      <path d="M28 34C28 34 30 36 32 36C34 36 36 34 36 34" stroke="white" stroke-width="2" stroke-linecap="round" />
+      <circle cx="32" cy="32" r="28" fill="currentColor" opacity="0.1"></circle>
+      <path d="M32 22C27 22 23 26 23 31C23 36 27 40 32 40C37 40 41 36 41 31C41 26 37 22 32 22Z" fill="currentColor"></path>
+      <circle cx="28" cy="29" r="2" fill="white"></circle>
+      <circle cx="36" cy="29" r="2" fill="white"></circle>
+      <path d="M28 34C28 34 30 36 32 36C34 36 36 34 36 34" stroke="white" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-  )
+  `
 };
 ---
 
@@ -65,7 +65,7 @@ const serviceIcons = {
       {services.map((service) => (
         <div class={`service-card${service.featured ? ' featured' : ''}`}>
           {service.badge ? <div class="featured-badge">{service.badge}</div> : null}
-          <div class="service-icon">{serviceIcons[service.icon] ?? null}</div>
+          <div class="service-icon" set:html={serviceIcons[service.icon] ?? ''}></div>
           <h3 class="service-title">{service.title}</h3>
           <p class="service-description">{service.description}</p>
           <ul class="service-list">
