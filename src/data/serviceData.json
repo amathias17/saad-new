@@ -1,77 +1,75 @@
 ﻿{
   "section": {
     "badge": "Our Services",
-    "title": "Comprehensive Dental Care",
-    "description": "From routine checkups to advanced treatments, we offer everything you need to maintain a healthy, beautiful smile."
+    "title": "Specialized Endodontic Services",
+    "description": "Focused care for complex root and pulp needs, delivered with precision and a patient-first approach."
   },
   "services": [
     {
-      "title": "Root Canal Treatment",
-      "description": "A procedure to remove vital or necrotic pulp tissue (nerve) from the root canal system (canals) within the tooth, followed by cleaning, shaping, and obturating the canals.",
+      "title": "Apexogenesis",
+      "description": "A vital pulp therapy procedure performed to encourage continued physiological development and formation of the root end, frequently used to describe vital pulp therapy performed to encourage the continuation of this process.",
       "items": [
-        "Pulp Tissue Removal",
-        "Canal Cleaning",
-        "Canal Shaping",
-        "Canal Obturation"
+        "Vital pulp therapy",
+        "Root development support",
+        "Open apex management",
+        "Immature tooth preservation"
       ],
-      "icon": "orthodontics"
+      "icon": "pediatric"
     },
     {
-      "title": "Root-End Surgery",
-      "description": "The surgical removal of the apical portion of a root and adherent soft tissue may be performed before root-end preparation for a root-end filling, or as a definitive treatment.",
+      "title": "Revascularization",
+      "description": "A method to induce the formation of vital tissue to grow back in place of the necrotic pulp tissue mainly in open apex teeth.",
       "items": [
-        "Apical Root Resection",
-        "Soft Tissue Removal",
-        "Root-End Preparation",
-        "Root-End Filling"
-      ],
-      "icon": "restorative",
-      "featured": false,
-      "badge": "Most Popular"
-    },
-    {
-      "title": "Restorative Care",
-      "description": "Repair and restore damaged teeth with natural-looking, long-lasting solutions.",
-      "items": [
-        "Dental Crowns",
-        "Bridges & Implants",
-        "Fillings",
-        "Root Canal Therapy"
+        "Regenerative approach",
+        "Vital tissue regrowth",
+        "Open apex cases",
+        "Necrotic pulp replacement"
       ],
       "icon": "restorative"
     },
     {
-      "title": "Orthodontics",
-      "description": "Straighten your teeth with modern solutions, from traditional braces to clear aligners.",
+      "title": "Post Removal",
+      "description": "A procedure to remove a post from inside the tooth. A post is a custom or preformed rod that is fitted and cemented into the root canal of an endodontically treated tooth for core retention.",
       "items": [
-        "Clear Aligners",
-        "Traditional Braces",
-        "Retainers",
-        "Orthodontic Consultations"
+        "Endodontic post removal",
+        "Preserve tooth structure",
+        "Ultrasonic techniques",
+        "Retreatment access"
+      ],
+      "icon": "restorative"
+    },
+    {
+      "title": "Silver Point Removal",
+      "description": "This is an old technique that was used more in the past. The silver point is a rigid radiopaque cone produced from almost pure silver in a variety of sizes, usually corresponding to the diameters and tapers of root canal files, historically used to obturate root canals in conjunction with a sealer.",
+      "items": [
+        "Remove historic silver points",
+        "Radiopaque cone extraction",
+        "Canal retreatment prep",
+        "Sealer cleanup"
+      ],
+      "icon": "preventive"
+    },
+    {
+      "title": "Separated Instrument Removal",
+      "description": "Since the canals inside the teeth are very narrow with often many complexities in the shape, diameter and length, the instruments used during the endodontic (root canal) treatment could separate and stay inside the tooth. In our office we use many techniques to retrieve these separated instruments.",
+      "items": [
+        "Locate separated instruments",
+        "Microsurgical retrieval",
+        "Complex canal management",
+        "Restore canal patency"
       ],
       "icon": "orthodontics"
     },
     {
-      "title": "Emergency Care",
-      "description": "Immediate attention for dental emergencies. We're here when you need us most.",
+      "title": "Perforation Repair",
+      "description": "Perforation is a communication between the root canal system (the inside of the tooth) and the external tooth surface, which could be due to pathological or mechanical reasons. We use different materials and techniques to repair these communications to avoid future leakage and re-infection of the tooth.",
       "items": [
-        "Same-Day Appointments",
-        "Pain Relief",
-        "Broken Tooth Repair",
-        "24/7 Emergency Line"
+        "Seal canal perforations",
+        "Biocompatible materials",
+        "Prevent leakage",
+        "Reduce reinfection risk"
       ],
       "icon": "emergency"
-    },
-    {
-      "title": "Pediatric Dentistry",
-      "description": "Gentle, specialized care for children in a fun, friendly environment.",
-      "items": [
-        "Children's Cleanings",
-        "Fluoride Treatments",
-        "Dental Sealants",
-        "Early Orthodontic Assessment"
-      ],
-      "icon": "pediatric"
     }
   ]
 }

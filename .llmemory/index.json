@@ -1,749 +1,767 @@
 {
-    "version":  1,
-    "entries":  [
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "project-update",
-                        "title":  "Complete Dentist Website Implementation",
-                        "description":  "Created full production-ready dentist website with Navbar, Hero, Services, About, Testimonials, CTA, and Footer using \u0027Soft Modern Wellness\u0027 design aesthetic",
-                        "files_modified":  [
-                                               "src/pages/index.astro",
-                                               "src/components/DentistHero.astro",
-                                               "src/components/Services.astro",
-                                               "src/components/About.astro",
-                                               "src/components/Testimonials.astro",
-                                               "src/components/CTA.astro",
-                                               "src/components/Footer.astro"
-                                           ],
-                        "tags":  [
-                                     "frontend",
-                                     "design",
-                                     "components",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Typography Consistency Fix",
-                        "description":  "Ensured consistent typography across all components. Added Google Fonts @import to all 6 components and applied Manrope to body text, Plus Jakarta Sans to headings",
-                        "files_modified":  [
-                                               "src/components/Services.astro",
-                                               "src/components/About.astro",
-                                               "src/components/Testimonials.astro",
-                                               "src/components/CTA.astro",
-                                               "src/components/Footer.astro"
-                                           ],
-                        "beads_issue":  "saad-new-kjj",
-                        "tags":  [
-                                     "typography",
-                                     "design-system",
-                                     "consistency"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-02-06",
-                        "type":  "performance",
-                        "title":  "Consolidated Font Imports",
-                        "description":  "Moved Google Fonts @import statements into BaseLayout and removed component-level imports to reduce duplicate font requests.",
-                        "files_modified":  [
-                                               "src/layouts/BaseLayout.astro",
-                                               "src/components/About.astro",
-                                               "src/components/CTA.astro",
-                                               "src/components/DentistHero.astro",
-                                               "src/components/Footer.astro",
-                                               "src/components/Navbar.astro",
-                                               "src/components/Services.astro",
-                                               "src/components/Testimonials.astro"
-                                           ],
-                        "beads_issue":  "saad-new-by8",
-                        "tags":  [
-                                     "fonts",
-                                     "performance",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Documented MCP Usage",
-                        "description":  "Added MCP server usage guidelines to AGENTS.md for proper tool selection and scope.",
-                        "files_modified":  [
-                                               "AGENTS.md"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "mcp",
-                                     "agent-instructions"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Expanded MCP Instructions",
-                        "description":  "Listed available MCP servers and usage steps in AGENTS.md.",
-                        "files_modified":  [
-                                               "AGENTS.md"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "mcp",
-                                     "agent-instructions"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "MCP List Fixup",
-                        "description":  "Added sequential-thinking and playwright to MCP list in AGENTS.md.",
-                        "files_modified":  [
-                                               "AGENTS.md"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "mcp",
-                                     "agent-instructions"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Added MCP Examples",
-                        "description":  "Added quick ?when to use? examples for each MCP in AGENTS.md.",
-                        "files_modified":  [
-                                               "AGENTS.md"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "mcp",
-                                     "agent-instructions"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Created Design Guide",
-                        "description":  "Documented the current visual system, tokens, and component patterns in docs/design-guide.md.",
-                        "files_modified":  [
-                                               "docs/design-guide.md"
-                                           ],
-                        "beads_issue":  "saad-new-aib",
-                        "tags":  [
-                                     "docs",
-                                     "design-guide",
-                                     "design-system"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "refactor",
-                        "title":  "Use BaseLayout on Index",
-                        "description":  "Switched index.astro to BaseLayout and added layout props to control navbar and main padding.",
-                        "files_modified":  [
-                                               "src/layouts/BaseLayout.astro",
-                                               "src/pages/index.astro",
-                                               "src/styles/global.css"
-                                           ],
-                        "beads_issue":  "saad-new-aac",
-                        "tags":  [
-                                     "layout",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "design-system",
-                        "title":  "Centralized Color Tokens",
-                        "description":  "Aligned global.css tokens with the design guide and replaced hardcoded palette values in components.",
-                        "files_modified":  [
-                                               "src/styles/global.css",
-                                               "src/components/DentistHero.astro",
-                                               "src/components/About.astro",
-                                               "src/components/Services.astro",
-                                               "src/components/CTA.astro",
-                                               "src/components/Testimonials.astro",
-                                               "src/components/Navbar.astro"
-                                           ],
-                        "beads_issue":  "saad-new-dyu",
-                        "tags":  [
-                                     "design-system",
-                                     "tokens"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Fix Global Color Tokens",
-                        "description":  "Restored design guide palette and nav tokens in global.css; removed nav-only root shadow overrides.",
-                        "files_modified":  [
-                                               "src/styles/global.css",
-                                               "src/components/Navbar.astro"
-                                           ],
-                        "beads_issue":  "saad-new-wz0",
-                        "tags":  [
-                                     "colors",
-                                     "design-system"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "refactor",
-                        "title":  "Componentized Section Headers",
-                        "description":  "Added SectionHeader Astro component and applied it to Services and Testimonials per Astro component props guidance.",
-                        "files_modified":  [
-                                               "src/components/SectionHeader.astro",
-                                               "src/components/Services.astro",
-                                               "src/components/Testimonials.astro"
-                                           ],
-                        "beads_issue":  "saad-new-1yx",
-                        "tags":  [
-                                     "components",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Hero Mobile Order Fix",
-                        "description":  "Adjusted hero layout ordering so text appears before the visual on smaller screens.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro"
-                                           ],
-                        "beads_issue":  "saad-new-1mg",
-                        "tags":  [
-                                     "hero",
-                                     "mobile",
-                                     "layout"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "cleanup",
-                        "title":  "Removed Placeholder Component",
-                        "description":  "Deleted src/components/EXAMPLE.astro to avoid shipping demo content.",
-                        "files_modified":  [
-                                               "src/components/EXAMPLE.astro"
-                                           ],
-                        "beads_issue":  "saad-new-06k",
-                        "tags":  [
-                                     "cleanup",
-                                     "components"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Improve Featured Service Card Contrast",
-                        "description":  "Adjusted featured service card list item text color for better readability on dark background.",
-                        "files_modified":  [
-                                               "src/components/Services.astro"
-                                           ],
-                        "beads_issue":  "saad-new-c0l",
-                        "tags":  [
-                                     "services",
-                                     "contrast"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Fix Mobile Navbar CTA Wrap",
-                        "description":  "Reduced CTA button sizing and forced no-wrap on mobile to prevent line breaks.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro"
-                                           ],
-                        "beads_issue":  "saad-new-e2r",
-                        "tags":  [
-                                     "navbar",
-                                     "mobile",
-                                     "layout"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "feature",
-                        "title":  "Added Hero Mobile Navigation",
-                        "description":  "Implemented a mobile nav toggle in DentistHero with dropdown links and CTA inside the menu.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro"
-                                           ],
-                        "beads_issue":  "saad-new-6oj",
-                        "tags":  [
-                                     "navbar",
-                                     "mobile"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Reduce Hero Mobile Whitespace",
-                        "description":  "Adjusted mobile hero padding and visual margins to eliminate excess bottom space.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro"
-                                           ],
-                        "beads_issue":  "saad-new-5v5",
-                        "tags":  [
-                                     "hero",
-                                     "mobile",
-                                     "layout"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Further Reduce Hero Mobile Whitespace",
-                        "description":  "Tightened mobile hero spacing and hid the smile illustration to reduce excess vertical space.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro"
-                                           ],
-                        "beads_issue":  "saad-new-5v5",
-                        "tags":  [
-                                     "hero",
-                                     "mobile",
-                                     "layout"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Reduce Services Headline Size on Mobile",
-                        "description":  "Decreased mobile Services section headline size to prevent truncation.",
-                        "files_modified":  [
-                                               "src/components/Services.astro"
-                                           ],
-                        "beads_issue":  "saad-new-coh",
-                        "tags":  [
-                                     "services",
-                                     "typography",
-                                     "mobile"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "SectionHeader Mobile Typography",
-                        "description":  "Added a mobile breakpoint in SectionHeader to reduce heading size on small screens.",
-                        "files_modified":  [
-                                               "src/components/SectionHeader.astro"
-                                           ],
-                        "beads_issue":  "saad-new-coh",
-                        "tags":  [
-                                     "typography",
-                                     "mobile"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Fix README Encoding Artifacts",
-                        "description":  "Rewrote README to remove corrupted template characters and use ASCII structure.",
-                        "files_modified":  [
-                                               "README.md"
-                                           ],
-                        "beads_issue":  "saad-new-5en",
-                        "tags":  [
-                                     "docs",
-                                     "readme",
-                                     "cleanup"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "design",
-                        "title":  "Add Navbar Shadow",
-                        "description":  "Added a subtle bottom shadow to the fixed navbar for visual separation.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro"
-                                           ],
-                        "beads_issue":  "saad-new-dky",
-                        "tags":  [
-                                     "navbar",
-                                     "styles",
-                                     "visual"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "refactor",
-                        "title":  "Navbar Data Source",
-                        "description":  "Moved navbar logo text, links, and CTA into src/data/navData.json and wired DentistHero to consume it.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro",
-                                               "src/data/navData.json"
-                                           ],
-                        "beads_issue":  "saad-new-g4t",
-                        "tags":  [
-                                     "navbar",
-                                     "data",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "feature",
-                        "title":  "Navbar Dropdown Data",
-                        "description":  "Added a nested nav item in src/data/navData.json and updated DentistHero to render a dropdown on desktop and nested links on mobile.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro",
-                                               "src/data/navData.json"
-                                           ],
-                        "beads_issue":  "saad-new-bdj",
-                        "tags":  [
-                                     "navbar",
-                                     "dropdown",
-                                     "data"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "investigation",
-                        "title":  "Astro Build EPERM",
-                        "description":  "Build fails because Node child_process spawn is blocked, causing Vite to error when running net use on Windows.",
-                        "files_modified":  [
-                                               ".llmemory/facts.jsonl",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-m6o",
-                        "tags":  [
-                                     "build",
-                                     "windows",
-                                     "investigation"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "cleanup",
-                        "title":  "Close Obsolete Navbar Social Links Task",
-                        "description":  "Closed qc3 since current navbar does not include social links.",
-                        "files_modified":  [
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-qc3",
-                        "tags":  [
-                                     "beads",
-                                     "cleanup"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "refactor",
-                        "title":  "Services Data Source",
-                        "description":  "Moved Services section content to src/data/serviceData.json and rendered cards dynamically with icon mapping.",
-                        "files_modified":  [
-                                               "src/components/Services.astro",
-                                               "src/data/serviceData.json"
-                                           ],
-                        "beads_issue":  "saad-new-s6k",
-                        "tags":  [
-                                     "services",
-                                     "data",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Fix Services Icon Rendering",
-                        "description":  "Replaced JSX icons in Services frontmatter with SVG strings and rendered them via set:html to satisfy Astro parsing.",
-                        "files_modified":  [
-                                               "src/components/Services.astro",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-s6k",
-                        "tags":  [
-                                     "services",
-                                     "astro",
-                                     "bugfix"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Require Pre-Commit Error Checks",
-                        "description":  "Added instruction in AGENTS.md to check for errors and fix them before committing.",
-                        "files_modified":  [
-                                               "AGENTS.md",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "process"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "refactor",
-                        "title":  "Footer Data Source",
-                        "description":  "Moved footer content to src/data/footerData.json and rendered it in Footer.astro with typed icon maps; added astro check deps.",
-                        "files_modified":  [
-                                               "src/components/Footer.astro",
-                                               "src/data/footerData.json",
-                                               "src/components/Services.astro",
-                                               "package.json",
-                                               "package-lock.json",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-avg",
-                        "tags":  [
-                                     "footer",
-                                     "data",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "MCP Usage Requirement",
-                        "description":  "Added instruction to always run sequential-thinking at task start and use MCPs when needed.",
-                        "files_modified":  [
-                                               "AGENTS.md",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "process",
-                                     "mcp"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "refactor",
-                        "title":  "Testimonials Data Source",
-                        "description":  "Moved testimonials content to src/data/testimonialData.json and rendered the section dynamically.",
-                        "files_modified":  [
-                                               "src/components/Testimonials.astro",
-                                               "src/data/testimonialData.json"
-                                           ],
-                        "beads_issue":  "saad-new-n2s",
-                        "tags":  [
-                                     "testimonials",
-                                     "data",
-                                     "astro"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "verification",
-                        "title":  "Verify Global Color Tokens",
-                        "description":  "Confirmed global.css tokens align with the design guide palette; no changes required.",
-                        "files_modified":  [
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-nnq",
-                        "tags":  [
-                                     "design-system",
-                                     "tokens",
-                                     "verification"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "cleanup",
-                        "title":  "Remove Unused Navbar Variable",
-                        "description":  "Deleted unused menu query in Navbar script to satisfy astro check.",
-                        "files_modified":  [
-                                               "src/components/Navbar.astro"
-                                           ],
-                        "beads_issue":  "saad-new-3bd",
-                        "tags":  [
-                                     "navbar",
-                                     "cleanup",
-                                     "lint"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "design-system",
-                        "title":  "Align Colors to bemdentalcare.com",
-                        "description":  "Updated global color tokens and nav palette to match the bemdentalcare.com color scheme, changing colors only.",
-                        "files_modified":  [
-                                               "src/styles/global.css"
-                                           ],
-                        "beads_issue":  "saad-new-3a6",
-                        "tags":  [
-                                     "colors",
-                                     "design-system"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "design",
-                        "title":  "Footer Palette Alignment",
-                        "description":  "Updated footer colors to match the new palette while preserving layout and typography.",
-                        "files_modified":  [
-                                               "src/components/Footer.astro"
-                                           ],
-                        "tags":  [
-                                     "footer",
-                                     "colors"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "design",
-                        "title":  "Footer Social Icon Visibility",
-                        "description":  "Updated footer social icon colors and display to improve contrast.",
-                        "files_modified":  [
-                                               "src/components/Footer.astro"
-                                           ],
-                        "tags":  [
-                                     "footer",
-                                     "icons",
-                                     "styles"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Footer Social Icons Visible",
-                        "description":  "Applied global svg sizing to footer social icons rendered via set:html.",
-                        "files_modified":  [
-                                               "src/components/Footer.astro"
-                                           ],
-                        "tags":  [
-                                     "footer",
-                                     "icons",
-                                     "bugfix"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "verification",
-                        "title":  "Breakpoint Visual Check",
-                        "description":  "Used Playwright to review 1280/1024/768 layouts; no issues found.",
-                        "files_modified":  [
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "playwright",
-                                     "responsive",
-                                     "verification"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "content",
-                        "title":  "Update Root Canal Service",
-                        "description":  "Replaced the first service card with Root Canal Treatment content and items, using the restorative icon.",
-                        "files_modified":  [
-                                               "src/data/serviceData.json",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "services",
-                                     "content",
-                                     "data"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "content",
-                        "title":  "Update Apicoectomy Service",
-                        "description":  "Replaced the second service card with Apicoectomy or Root-End Surgery content, items, and restorative icon.",
-                        "files_modified":  [
-                                               "src/data/serviceData.json",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "services",
-                                     "content",
-                                     "data"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "feature",
-                        "title":  "Created About Page",
-                        "description":  "Built comprehensive standalone About page featuring Dr. Saad\u0027s background, expertise, philosophy, and practice facilities with full design system consistency.",
-                        "files_modified":  [
-                                               "src/pages/about.astro",
-                                               "src/data/navData.json",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "about",
-                                     "page",
-                                     "astro",
-                                     "content"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Fix About Page Navbar",
-                        "description":  "Replaced old Navbar component with DentistHero navbar on About page for consistency with homepage design.",
-                        "files_modified":  [
-                                               "src/pages/about.astro",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-0sp",
-                        "tags":  [
-                                     "about",
-                                     "navbar",
-                                     "bugfix"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "docs",
-                        "title":  "Adjust Sequential-Thinking Rule",
-                        "description":  "Updated AGENTS.md to require sequential-thinking only when starting a beads task, not when creating a beads task.",
-                        "files_modified":  [
-                                               "AGENTS.md",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "tags":  [
-                                     "docs",
-                                     "process",
-                                     "mcp"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "content",
-                        "title":  "Link About in Footer",
-                        "description":  "Updated footer Company link to point About Us to /about.",
-                        "files_modified":  [
-                                               "src/data/footerData.json",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-9ae",
-                        "tags":  [
-                                     "footer",
-                                     "links",
-                                     "about"
-                                 ]
-                    },
-                    {
-                        "date":  "2025-12-27",
-                        "type":  "bug-fix",
-                        "title":  "Link Navbar Logo to Home",
-                        "description":  "Converted the navbar logo container into a link pointing to /. Added link styling to preserve appearance.",
-                        "files_modified":  [
-                                               "src/components/DentistHero.astro",
-                                               ".llmemory/tasks.jsonl",
-                                               ".llmemory/index.json"
-                                           ],
-                        "beads_issue":  "saad-new-2s8",
-                        "tags":  [
-                                     "navbar",
-                                     "links",
-                                     "ux"
-                                 ]
-                    }
-                ]
+    "version": 1,
+    "entries": [
+        {
+            "date": "2025-12-27",
+            "type": "project-update",
+            "title": "Complete Dentist Website Implementation",
+            "description": "Created full production-ready dentist website with Navbar, Hero, Services, About, Testimonials, CTA, and Footer using 'Soft Modern Wellness' design aesthetic",
+            "files_modified": [
+                "src/pages/index.astro",
+                "src/components/DentistHero.astro",
+                "src/components/Services.astro",
+                "src/components/About.astro",
+                "src/components/Testimonials.astro",
+                "src/components/CTA.astro",
+                "src/components/Footer.astro"
+            ],
+            "tags": [
+                "frontend",
+                "design",
+                "components",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Typography Consistency Fix",
+            "description": "Ensured consistent typography across all components. Added Google Fonts @import to all 6 components and applied Manrope to body text, Plus Jakarta Sans to headings",
+            "files_modified": [
+                "src/components/Services.astro",
+                "src/components/About.astro",
+                "src/components/Testimonials.astro",
+                "src/components/CTA.astro",
+                "src/components/Footer.astro"
+            ],
+            "beads_issue": "saad-new-kjj",
+            "tags": [
+                "typography",
+                "design-system",
+                "consistency"
+            ]
+        },
+        {
+            "date": "2025-02-06",
+            "type": "performance",
+            "title": "Consolidated Font Imports",
+            "description": "Moved Google Fonts @import statements into BaseLayout and removed component-level imports to reduce duplicate font requests.",
+            "files_modified": [
+                "src/layouts/BaseLayout.astro",
+                "src/components/About.astro",
+                "src/components/CTA.astro",
+                "src/components/DentistHero.astro",
+                "src/components/Footer.astro",
+                "src/components/Navbar.astro",
+                "src/components/Services.astro",
+                "src/components/Testimonials.astro"
+            ],
+            "beads_issue": "saad-new-by8",
+            "tags": [
+                "fonts",
+                "performance",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Documented MCP Usage",
+            "description": "Added MCP server usage guidelines to AGENTS.md for proper tool selection and scope.",
+            "files_modified": [
+                "AGENTS.md"
+            ],
+            "tags": [
+                "docs",
+                "mcp",
+                "agent-instructions"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Expanded MCP Instructions",
+            "description": "Listed available MCP servers and usage steps in AGENTS.md.",
+            "files_modified": [
+                "AGENTS.md"
+            ],
+            "tags": [
+                "docs",
+                "mcp",
+                "agent-instructions"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "MCP List Fixup",
+            "description": "Added sequential-thinking and playwright to MCP list in AGENTS.md.",
+            "files_modified": [
+                "AGENTS.md"
+            ],
+            "tags": [
+                "docs",
+                "mcp",
+                "agent-instructions"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Added MCP Examples",
+            "description": "Added quick ?when to use? examples for each MCP in AGENTS.md.",
+            "files_modified": [
+                "AGENTS.md"
+            ],
+            "tags": [
+                "docs",
+                "mcp",
+                "agent-instructions"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Created Design Guide",
+            "description": "Documented the current visual system, tokens, and component patterns in docs/design-guide.md.",
+            "files_modified": [
+                "docs/design-guide.md"
+            ],
+            "beads_issue": "saad-new-aib",
+            "tags": [
+                "docs",
+                "design-guide",
+                "design-system"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "refactor",
+            "title": "Use BaseLayout on Index",
+            "description": "Switched index.astro to BaseLayout and added layout props to control navbar and main padding.",
+            "files_modified": [
+                "src/layouts/BaseLayout.astro",
+                "src/pages/index.astro",
+                "src/styles/global.css"
+            ],
+            "beads_issue": "saad-new-aac",
+            "tags": [
+                "layout",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "design-system",
+            "title": "Centralized Color Tokens",
+            "description": "Aligned global.css tokens with the design guide and replaced hardcoded palette values in components.",
+            "files_modified": [
+                "src/styles/global.css",
+                "src/components/DentistHero.astro",
+                "src/components/About.astro",
+                "src/components/Services.astro",
+                "src/components/CTA.astro",
+                "src/components/Testimonials.astro",
+                "src/components/Navbar.astro"
+            ],
+            "beads_issue": "saad-new-dyu",
+            "tags": [
+                "design-system",
+                "tokens"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Fix Global Color Tokens",
+            "description": "Restored design guide palette and nav tokens in global.css; removed nav-only root shadow overrides.",
+            "files_modified": [
+                "src/styles/global.css",
+                "src/components/Navbar.astro"
+            ],
+            "beads_issue": "saad-new-wz0",
+            "tags": [
+                "colors",
+                "design-system"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "refactor",
+            "title": "Componentized Section Headers",
+            "description": "Added SectionHeader Astro component and applied it to Services and Testimonials per Astro component props guidance.",
+            "files_modified": [
+                "src/components/SectionHeader.astro",
+                "src/components/Services.astro",
+                "src/components/Testimonials.astro"
+            ],
+            "beads_issue": "saad-new-1yx",
+            "tags": [
+                "components",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Hero Mobile Order Fix",
+            "description": "Adjusted hero layout ordering so text appears before the visual on smaller screens.",
+            "files_modified": [
+                "src/components/DentistHero.astro"
+            ],
+            "beads_issue": "saad-new-1mg",
+            "tags": [
+                "hero",
+                "mobile",
+                "layout"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "cleanup",
+            "title": "Removed Placeholder Component",
+            "description": "Deleted src/components/EXAMPLE.astro to avoid shipping demo content.",
+            "files_modified": [
+                "src/components/EXAMPLE.astro"
+            ],
+            "beads_issue": "saad-new-06k",
+            "tags": [
+                "cleanup",
+                "components"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Improve Featured Service Card Contrast",
+            "description": "Adjusted featured service card list item text color for better readability on dark background.",
+            "files_modified": [
+                "src/components/Services.astro"
+            ],
+            "beads_issue": "saad-new-c0l",
+            "tags": [
+                "services",
+                "contrast"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Fix Mobile Navbar CTA Wrap",
+            "description": "Reduced CTA button sizing and forced no-wrap on mobile to prevent line breaks.",
+            "files_modified": [
+                "src/components/DentistHero.astro"
+            ],
+            "beads_issue": "saad-new-e2r",
+            "tags": [
+                "navbar",
+                "mobile",
+                "layout"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "feature",
+            "title": "Added Hero Mobile Navigation",
+            "description": "Implemented a mobile nav toggle in DentistHero with dropdown links and CTA inside the menu.",
+            "files_modified": [
+                "src/components/DentistHero.astro"
+            ],
+            "beads_issue": "saad-new-6oj",
+            "tags": [
+                "navbar",
+                "mobile"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Reduce Hero Mobile Whitespace",
+            "description": "Adjusted mobile hero padding and visual margins to eliminate excess bottom space.",
+            "files_modified": [
+                "src/components/DentistHero.astro"
+            ],
+            "beads_issue": "saad-new-5v5",
+            "tags": [
+                "hero",
+                "mobile",
+                "layout"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Further Reduce Hero Mobile Whitespace",
+            "description": "Tightened mobile hero spacing and hid the smile illustration to reduce excess vertical space.",
+            "files_modified": [
+                "src/components/DentistHero.astro"
+            ],
+            "beads_issue": "saad-new-5v5",
+            "tags": [
+                "hero",
+                "mobile",
+                "layout"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Reduce Services Headline Size on Mobile",
+            "description": "Decreased mobile Services section headline size to prevent truncation.",
+            "files_modified": [
+                "src/components/Services.astro"
+            ],
+            "beads_issue": "saad-new-coh",
+            "tags": [
+                "services",
+                "typography",
+                "mobile"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "SectionHeader Mobile Typography",
+            "description": "Added a mobile breakpoint in SectionHeader to reduce heading size on small screens.",
+            "files_modified": [
+                "src/components/SectionHeader.astro"
+            ],
+            "beads_issue": "saad-new-coh",
+            "tags": [
+                "typography",
+                "mobile"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Fix README Encoding Artifacts",
+            "description": "Rewrote README to remove corrupted template characters and use ASCII structure.",
+            "files_modified": [
+                "README.md"
+            ],
+            "beads_issue": "saad-new-5en",
+            "tags": [
+                "docs",
+                "readme",
+                "cleanup"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "design",
+            "title": "Add Navbar Shadow",
+            "description": "Added a subtle bottom shadow to the fixed navbar for visual separation.",
+            "files_modified": [
+                "src/components/DentistHero.astro"
+            ],
+            "beads_issue": "saad-new-dky",
+            "tags": [
+                "navbar",
+                "styles",
+                "visual"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "refactor",
+            "title": "Navbar Data Source",
+            "description": "Moved navbar logo text, links, and CTA into src/data/navData.json and wired DentistHero to consume it.",
+            "files_modified": [
+                "src/components/DentistHero.astro",
+                "src/data/navData.json"
+            ],
+            "beads_issue": "saad-new-g4t",
+            "tags": [
+                "navbar",
+                "data",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "feature",
+            "title": "Navbar Dropdown Data",
+            "description": "Added a nested nav item in src/data/navData.json and updated DentistHero to render a dropdown on desktop and nested links on mobile.",
+            "files_modified": [
+                "src/components/DentistHero.astro",
+                "src/data/navData.json"
+            ],
+            "beads_issue": "saad-new-bdj",
+            "tags": [
+                "navbar",
+                "dropdown",
+                "data"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "investigation",
+            "title": "Astro Build EPERM",
+            "description": "Build fails because Node child_process spawn is blocked, causing Vite to error when running net use on Windows.",
+            "files_modified": [
+                ".llmemory/facts.jsonl",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-m6o",
+            "tags": [
+                "build",
+                "windows",
+                "investigation"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "cleanup",
+            "title": "Close Obsolete Navbar Social Links Task",
+            "description": "Closed qc3 since current navbar does not include social links.",
+            "files_modified": [
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-qc3",
+            "tags": [
+                "beads",
+                "cleanup"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "refactor",
+            "title": "Services Data Source",
+            "description": "Moved Services section content to src/data/serviceData.json and rendered cards dynamically with icon mapping.",
+            "files_modified": [
+                "src/components/Services.astro",
+                "src/data/serviceData.json"
+            ],
+            "beads_issue": "saad-new-s6k",
+            "tags": [
+                "services",
+                "data",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Fix Services Icon Rendering",
+            "description": "Replaced JSX icons in Services frontmatter with SVG strings and rendered them via set:html to satisfy Astro parsing.",
+            "files_modified": [
+                "src/components/Services.astro",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-s6k",
+            "tags": [
+                "services",
+                "astro",
+                "bugfix"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Require Pre-Commit Error Checks",
+            "description": "Added instruction in AGENTS.md to check for errors and fix them before committing.",
+            "files_modified": [
+                "AGENTS.md",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "docs",
+                "process"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "refactor",
+            "title": "Footer Data Source",
+            "description": "Moved footer content to src/data/footerData.json and rendered it in Footer.astro with typed icon maps; added astro check deps.",
+            "files_modified": [
+                "src/components/Footer.astro",
+                "src/data/footerData.json",
+                "src/components/Services.astro",
+                "package.json",
+                "package-lock.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-avg",
+            "tags": [
+                "footer",
+                "data",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "MCP Usage Requirement",
+            "description": "Added instruction to always run sequential-thinking at task start and use MCPs when needed.",
+            "files_modified": [
+                "AGENTS.md",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "docs",
+                "process",
+                "mcp"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "refactor",
+            "title": "Testimonials Data Source",
+            "description": "Moved testimonials content to src/data/testimonialData.json and rendered the section dynamically.",
+            "files_modified": [
+                "src/components/Testimonials.astro",
+                "src/data/testimonialData.json"
+            ],
+            "beads_issue": "saad-new-n2s",
+            "tags": [
+                "testimonials",
+                "data",
+                "astro"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "verification",
+            "title": "Verify Global Color Tokens",
+            "description": "Confirmed global.css tokens align with the design guide palette; no changes required.",
+            "files_modified": [
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-nnq",
+            "tags": [
+                "design-system",
+                "tokens",
+                "verification"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "cleanup",
+            "title": "Remove Unused Navbar Variable",
+            "description": "Deleted unused menu query in Navbar script to satisfy astro check.",
+            "files_modified": [
+                "src/components/Navbar.astro"
+            ],
+            "beads_issue": "saad-new-3bd",
+            "tags": [
+                "navbar",
+                "cleanup",
+                "lint"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "design-system",
+            "title": "Align Colors to bemdentalcare.com",
+            "description": "Updated global color tokens and nav palette to match the bemdentalcare.com color scheme, changing colors only.",
+            "files_modified": [
+                "src/styles/global.css"
+            ],
+            "beads_issue": "saad-new-3a6",
+            "tags": [
+                "colors",
+                "design-system"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "design",
+            "title": "Footer Palette Alignment",
+            "description": "Updated footer colors to match the new palette while preserving layout and typography.",
+            "files_modified": [
+                "src/components/Footer.astro"
+            ],
+            "tags": [
+                "footer",
+                "colors"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "design",
+            "title": "Footer Social Icon Visibility",
+            "description": "Updated footer social icon colors and display to improve contrast.",
+            "files_modified": [
+                "src/components/Footer.astro"
+            ],
+            "tags": [
+                "footer",
+                "icons",
+                "styles"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Footer Social Icons Visible",
+            "description": "Applied global svg sizing to footer social icons rendered via set:html.",
+            "files_modified": [
+                "src/components/Footer.astro"
+            ],
+            "tags": [
+                "footer",
+                "icons",
+                "bugfix"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "verification",
+            "title": "Breakpoint Visual Check",
+            "description": "Used Playwright to review 1280/1024/768 layouts; no issues found.",
+            "files_modified": [
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "playwright",
+                "responsive",
+                "verification"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "content",
+            "title": "Update Root Canal Service",
+            "description": "Replaced the first service card with Root Canal Treatment content and items, using the restorative icon.",
+            "files_modified": [
+                "src/data/serviceData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "services",
+                "content",
+                "data"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "content",
+            "title": "Update Apicoectomy Service",
+            "description": "Replaced the second service card with Apicoectomy or Root-End Surgery content, items, and restorative icon.",
+            "files_modified": [
+                "src/data/serviceData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "services",
+                "content",
+                "data"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "feature",
+            "title": "Created About Page",
+            "description": "Built comprehensive standalone About page featuring Dr. Saad's background, expertise, philosophy, and practice facilities with full design system consistency.",
+            "files_modified": [
+                "src/pages/about.astro",
+                "src/data/navData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "about",
+                "page",
+                "astro",
+                "content"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Fix About Page Navbar",
+            "description": "Replaced old Navbar component with DentistHero navbar on About page for consistency with homepage design.",
+            "files_modified": [
+                "src/pages/about.astro",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-0sp",
+            "tags": [
+                "about",
+                "navbar",
+                "bugfix"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "docs",
+            "title": "Adjust Sequential-Thinking Rule",
+            "description": "Updated AGENTS.md to require sequential-thinking only when starting a beads task, not when creating a beads task.",
+            "files_modified": [
+                "AGENTS.md",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "tags": [
+                "docs",
+                "process",
+                "mcp"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "content",
+            "title": "Link About in Footer",
+            "description": "Updated footer Company link to point About Us to /about.",
+            "files_modified": [
+                "src/data/footerData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-9ae",
+            "tags": [
+                "footer",
+                "links",
+                "about"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "bug-fix",
+            "title": "Link Navbar Logo to Home",
+            "description": "Converted the navbar logo container into a link pointing to /. Added link styling to preserve appearance.",
+            "files_modified": [
+                "src/components/DentistHero.astro",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-2s8",
+            "tags": [
+                "navbar",
+                "links",
+                "ux"
+            ]
+        },
+        {
+            "date": "2025-12-27",
+            "type": "content",
+            "title": "Update Services From bemdentalcare.com",
+            "description": "Replaced serviceData.json entries with the six services listed on bemdentalcare.com/services and updated section copy.",
+            "files_modified": [
+                "src/data/serviceData.json",
+                ".llmemory/tasks.jsonl",
+                ".llmemory/facts.jsonl",
+                ".llmemory/index.json"
+            ],
+            "beads_issue": "saad-new-0r7",
+            "tags": [
+                "services",
+                "content",
+                "data"
+            ]
+        }
+    ]
 }
