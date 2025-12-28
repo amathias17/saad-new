@@ -2,30 +2,30 @@
 
 :root {
   /* Core palette (Design Guide) */
-  --ivory: #FAF9F6;
-  --warm-gray: #E8E4DF;
-  --sage: #A8C5B5;
-  --sage-dark: #2A5F4F;
-  --terracotta: #E8AE90;
-  --text-primary: #2C3E38;
-  --text-secondary: #5A6E68;
-  --deep-green: #1F4D3F;
-  --amber: #F59E0B;
+  --ivory: #F6F6F6;
+  --warm-gray: #EDE9E1;
+  --sage: #40C0F2;
+  --sage-dark: #154051;
+  --terracotta: #116DFF;
+  --text-primary: #444444;
+  --text-secondary: #626262;
+  --deep-green: #221F7B;
+  --amber: #70F0A6;
 
   /* Navigation palette */
-  --nav-primary: #02B8BF;
+  --nav-primary: #116DFF;
   --nav-primary-light: #40C0F2;
   --nav-primary-dark: #154051;
   --nav-secondary: #40C0F2;
-  --nav-accent: #154051;
-  --nav-text: #333333;
+  --nav-accent: #221F7B;
+  --nav-text: #444444;
   --nav-text-light: #626262;
   --nav-bg: #F6F6F6;
   --nav-cream: #F6F6F6;
   --nav-white: #FFFFFF;
-  --nav-shadow: rgba(2, 184, 191, 0.08);
-  --nav-shadow-md: rgba(2, 184, 191, 0.12);
-  --nav-shadow-lg: rgba(2, 184, 191, 0.18);
+  --nav-shadow: rgba(17, 109, 255, 0.08);
+  --nav-shadow-md: rgba(17, 109, 255, 0.12);
+  --nav-shadow-lg: rgba(17, 109, 255, 0.18);
 
   /* Legacy aliases for shared utilities */
   --primary: var(--sage-dark);

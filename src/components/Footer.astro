@@ -140,15 +140,15 @@ const footerIcons: Record<string, string> = {
   <!-- Decorative wave -->
   <div class="footer-wave">
     <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" fill="var(--sage-dark)" opacity="0.1"></path>
+      <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" fill="var(--nav-primary)" opacity="0.12"></path>
     </svg>
   </div>
 </footer>
 
 <style>
   .footer {
-    background: var(--text-primary);
-    color: rgba(255, 255, 255, 0.8);
+    background: var(--nav-primary-dark);
+    color: rgba(255, 255, 255, 0.85);
     position: relative;
     overflow: hidden;
   }
@@ -178,7 +178,7 @@ const footerIcons: Record<string, string> = {
     grid-template-columns: 1.2fr 2fr;
     gap: 4rem;
     padding-bottom: 3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     margin-bottom: 2rem;
   }
 
@@ -191,7 +191,7 @@ const footerIcons: Record<string, string> = {
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
-    color: white;
+    color: var(--nav-white);
   }
 
   .footer-logo svg {
@@ -212,7 +212,7 @@ const footerIcons: Record<string, string> = {
     line-height: 1.7;
     margin-bottom: 2rem;
     max-width: 400px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .footer-social {
@@ -226,22 +226,33 @@ const footerIcons: Record<string, string> = {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 50%;
-    color: white;
+    color: var(--nav-white);
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .social-link span {
+    display: block;
+  }
+
+  :global(.social-link svg) {
+    width: 20px;
+    height: 20px;
+    display: block;
   }
 
   .social-link:hover {
-    background: var(--sage);
+    background: var(--nav-primary);
     transform: translateY(-3px);
-    border-color: var(--sage);
+    border-color: var(--nav-primary);
   }
 
-  .social-link svg {
+  :global(.contact-item svg) {
     width: 20px;
     height: 20px;
+    display: block;
   }
 
   .footer-links {
@@ -273,7 +284,7 @@ const footerIcons: Record<string, string> = {
   }
 
   .footer-list a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.72);
     text-decoration: none;
     font-family: 'Manrope', sans-serif;
     font-size: 0.95rem;
@@ -282,7 +293,7 @@ const footerIcons: Record<string, string> = {
   }
 
   .footer-list a:hover {
-    color: var(--sage);
+    color: var(--nav-primary-light);
     transform: translateX(4px);
   }
 
@@ -306,24 +317,24 @@ const footerIcons: Record<string, string> = {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    color: var(--sage);
+    color: var(--nav-primary-light);
     margin-top: 2px;
   }
 
   .contact-item a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.72);
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .contact-item a:hover {
-    color: var(--sage);
+    color: var(--nav-primary-light);
   }
 
   .office-hours {
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 
   .hours-heading {
@@ -345,7 +356,7 @@ const footerIcons: Record<string, string> = {
     justify-content: space-between;
     font-family: 'Manrope', sans-serif;
     font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.72);
   }
 
   .footer-bottom {
@@ -363,7 +374,7 @@ const footerIcons: Record<string, string> = {
   .copyright {
     font-family: 'Manrope', sans-serif;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.55);
   }
 
   .footer-bottom-links {
@@ -375,17 +386,17 @@ const footerIcons: Record<string, string> = {
   }
 
   .footer-bottom-links a {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.55);
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .footer-bottom-links a:hover {
-    color: var(--sage);
+    color: var(--nav-primary-light);
   }
 
   .divider {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.35);
   }
 
   @keyframes fadeInUp {

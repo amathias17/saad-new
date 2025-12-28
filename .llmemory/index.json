@@ -557,6 +557,47 @@
                                      "cleanup",
                                      "lint"
                                  ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "design-system",
+                        "title":  "Align Colors to bemdentalcare.com",
+                        "description":  "Updated global color tokens and nav palette to match the bemdentalcare.com color scheme, changing colors only.",
+                        "files_modified":  [
+                                               "src/styles/global.css"
+                                           ],
+                        "beads_issue":  "saad-new-3a6",
+                        "tags":  [
+                                     "colors",
+                                     "design-system"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "design",
+                        "title":  "Footer Palette Alignment",
+                        "description":  "Updated footer colors to match the new palette while preserving layout and typography.",
+                        "files_modified":  [
+                                               "src/components/Footer.astro"
+                                           ],
+                        "tags":  [
+                                     "footer",
+                                     "colors"
+                                 ]
+                    },
+                    {
+                        "date":  "2025-12-27",
+                        "type":  "design",
+                        "title":  "Footer Social Icon Visibility",
+                        "description":  "Updated footer social icon colors and display to improve contrast.",
+                        "files_modified":  [
+                                               "src/components/Footer.astro"
+                                           ],
+                        "tags":  [
+                                     "footer",
+                                     "icons",
+                                     "styles"
+                                 ]
                     }
                 ]
 }
